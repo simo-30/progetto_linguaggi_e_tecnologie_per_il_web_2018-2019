@@ -1,0 +1,6 @@
+PAGINA INIZIALE (index.html)
+
+La pagina iniziale avrà in alto centrale il logo, sotto una form per accedere (con i campi: username/email,
+password) ed i pulsanti "accedi" o "nuova registrazione".
+Con il pulsante "nuova registrazione" si andrà in una pagina con un'altra form per la prima registrazione,
+mentre con il pulsante "accedi" si andrà in una pagina con l'elenco dei ristoranti presenti.
