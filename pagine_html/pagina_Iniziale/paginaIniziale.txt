@@ -4,3 +4,15 @@ La pagina iniziale avrà in alto centrale il logo, sotto una form per accedere (
 password) ed i pulsanti "accedi" o "nuova registrazione".
 Con il pulsante "nuova registrazione" si andrà in una pagina con un'altra form per la prima registrazione,
 mentre con il pulsante "accedi" si andrà in una pagina con l'elenco dei ristoranti presenti.
+
+
+------------------------------------------------
+come dovrebbe essere visualizzata -- tutto centrato
+------------------------------------------------
+
+img
+
+username/email: _____________
+password:		_____________
+ ________   ____________________
+| ACCEDI | | NUOVA REGISTRAZIONE|
