@@ -1,1 +1,4 @@
 PAGINA NUOVA REGISTRAZIONE (nuovaRegistrazione.html)
+
+Questa pagina è dedicata per ogni nuova registrazione di un nuovo cliente di questo servizio.
+Ci sarà un form con la richiesta di email, username, password, pulsante "Iscriviti"
