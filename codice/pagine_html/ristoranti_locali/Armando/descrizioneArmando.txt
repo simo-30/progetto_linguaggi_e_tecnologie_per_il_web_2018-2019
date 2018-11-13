@@ -1,11 +1,11 @@
 "Armando" è una pizzeria napoletana, questo è il suo menù:
 PIZZE
--margherita
--marinara
--diavola
--focaccia
--prosciutto e scamorza
--salsiccia e funghi
+-margherita 6€ (pomodoro, mozzarella, basilico)
+-marinara 5€ (pomodoro, aglio, acciughe)
+-diavola 7,50€(pomodoro, mozzarella, salame piccante)
+-focaccia 3€ (olio, rosmarino)
+-prosciutto e scamorza 7€ (prosciutto crudo, scamorza)
+-salsiccia e funghi 8€ (salsiccia, funghi, mozzarella)
 BIBITE
 -acqua 1l
 -acqua 0,5l
