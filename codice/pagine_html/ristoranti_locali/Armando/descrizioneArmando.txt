@@ -1,0 +1,18 @@
+"Armando" è una pizzeria napoletana, questo è il suo menù:
+PIZZE
+-margherita
+-marinara
+-diavola
+-focaccia
+-prosciutto e scamorza
+-salsiccia e funghi
+BIBITE
+-acqua 1l
+-acqua 0,5l
+-coca-cola 0,5l
+-coca-cola lattina
+-fanta 0,5l
+-fanta lattina
+NUM TAVOLI
+-5 da 4 persone
+-3 da 6 persone

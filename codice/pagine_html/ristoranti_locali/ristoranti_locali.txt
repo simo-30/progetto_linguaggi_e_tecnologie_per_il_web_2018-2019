@@ -1,0 +1,6 @@
+Qui ci saranno le varie pagine dei locali presenti in archivio.
+Ognuna sarà collegata ad una tabella relazione per la gestione con php,
+l'ordine stesso sarà una tabella.
+Nella tabella sopracitata ci saranno le seguenti voci: nome_del_piatto, prezzo, 
+quantità (NULL nelle tabelle dei ristoranti, >=1 nella tabella dell'ordine), 
+descrizione (NULL, o magari ci possono essere gli ingredienti)
