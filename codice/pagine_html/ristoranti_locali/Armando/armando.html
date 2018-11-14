@@ -15,48 +15,26 @@
                     "La vera pizzeria napoletana"
                 </div>
         </div>
-        <nav id="navbar-example3" class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">Menù</a>
-            <nav class="nav nav-pills flex-column">
-                <a class="nav-link" href="#pizze">PIZZE</a>
-                <nav class="nav nav-pills flex-column">
-                    <a class="nav-link ml-3 my-1" href="#margherita">Margherita</a>
-                    <a class="nav-link ml-3 my-1" href="#marinara">Marinara</a>
-                    <a class="nav-link ml-3 my-1" href="#diavola">Diavola</a>
-                    <a class="nav-link ml-3 my-1" href="#focaccia">Focaccia</a>                        <a class="nav-link ml-3 my-1" href="#prosciuttoScamorza">Prosciutto e scamorza</a>
-                    <a class="nav-link ml-3 my-1" href="#salsicciaFunghi">Salsiccia e funghi</a>
-                </nav>
-                <a class="nav-link" href="#bibite">BIBITE</a>
-                <nav class="nav nav-pills flex-column">
-                    <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
-                    <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
-                </nav>
-        </nav>
-        </nav>      
-            <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-                <h3 id="pizze">PIZZE</h3>
-                <h5 id="margherita">Margherita 6€</h5>
-                <p>pomodoro, mozzarella, basilico</p>
-                <h5 id="marinara">Marinara 5€</h5>
-                <p>pomodoro, aglio, acciughe</p>
-                <h5 id="diavola">Diavola 7,50€</h5>
-                <p>pomodoro, mozzarella, salame piccante</p>
-                <h5 id="focaccia">Focaccia 3€</h5>
-                <p>olio, rosmarino</p>
-                <h5 id="prosciuttoScamorza">Prosciutto e scamorza 7€</h5>
-                <p>prosciutto crudo, scamorza</p>
-                <h5 id="salsicciaFunghi">Salsiccia e funghi 8€</h5>
-                <p>salsiccia, funghi, mozzarella</p>
-                <h5 id="item-1-2">Item 2-2</h5>
-                <p>...</p>
-                <h4 id="item-2">Item 2</h4>
-                <p>...</p>
-                <h4 id="item-3">Item 3</h4>
-                <p>...</p>
-                <h5 id="item-3-1">Item 3-1</h5>
-                <p>...</p>
-                <h5 id="item-3-2">Item 3-2</h5>
-                <p>...</p>
+        <div class="row">
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+              </div>
+            </div>
+          </div>
+            <div class="fixed-bottom d-inline p-2 bg-primary text-white">
+                <h6>Built with ❤ by Simone e Lorenzo</h6>            
             </div>
     </body>
 </html>
