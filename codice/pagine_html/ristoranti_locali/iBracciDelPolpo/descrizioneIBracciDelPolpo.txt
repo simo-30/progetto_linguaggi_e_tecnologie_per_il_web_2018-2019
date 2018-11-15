@@ -1,4 +1,6 @@
 "I bracci del polpo" è un ristorante di pesce, questo è il suo menù:
+ANTIPASTI
+-insalata di mare
 PRIMI
 -tonnarelli allo scoglio
 -spaghetti alle vongole
@@ -7,4 +9,16 @@ PRIMI
 SECONDI
 -orata alla piastra
 -filetto di pesce spada
--...
+-spiedini di pesce
+-frittura mista
+-sautè di cozze e vongole
+BIBITE
+-acqua 1l
+-vino bianco della casa 0,75l
+-vino rosso della casa 0,75l
+-coca-cola 0,5l
+-fanta 0,5l
+TAVOLI
+-10 da 4 persone
+-5 da 6 persone
+-2 da 8 persone
