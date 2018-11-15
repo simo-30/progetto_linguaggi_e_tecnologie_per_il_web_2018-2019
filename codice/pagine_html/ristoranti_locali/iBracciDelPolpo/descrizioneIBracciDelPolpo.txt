@@ -1,0 +1,10 @@
+"I bracci del polpo" è un ristorante di pesce, questo è il suo menù:
+PRIMI
+-tonnarelli allo scoglio
+-spaghetti alle vongole
+-carbonara di pesce
+-risotto di pesce
+SECONDI
+-orata alla piastra
+-filetto di pesce spada
+-...
