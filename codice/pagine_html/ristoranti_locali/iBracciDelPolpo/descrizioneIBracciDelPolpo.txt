@@ -1,23 +1,24 @@
 "I bracci del polpo" è un ristorante di pesce, questo è il suo menù:
 ANTIPASTI
--insalata di mare
+-insalata di mare 5€
+-antipasto di mare 7€
 PRIMI
--tonnarelli allo scoglio
--spaghetti alle vongole
--carbonara di pesce
--risotto di pesce
+-tonnarelli allo scoglio 12€
+-spaghetti alle vongole 11,50€
+-carbonara di pesce 13€
+-risotto di pesce 10€
 SECONDI
--orata alla piastra
--filetto di pesce spada
--spiedini di pesce
--frittura mista
--sautè di cozze e vongole
+-orata alla piastra 14€
+-filetto di pesce spada 15€
+-spiedini di pesce 16€
+-frittura mista 13€
+-sautè di cozze e vongole 12€
 BIBITE
--acqua 1l
--vino bianco della casa 0,75l
--vino rosso della casa 0,75l
--coca-cola 0,5l
--fanta 0,5l
+-acqua 1l 1,50€
+-vino bianco della casa 0,75l 3€
+-vino rosso della casa 0,75l 3€
+-coca-cola 0,5l 2€
+-fanta 0,5l 2€
 TAVOLI
 -10 da 4 persone
 -5 da 6 persone
