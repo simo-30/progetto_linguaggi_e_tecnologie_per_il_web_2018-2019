@@ -34,29 +34,30 @@
         <h5>Effettua una nuova registrazione</h5>
         
         <ul class="pagination justify-content-center">
-        <form>
+        <form id="registrazione">
                 <div class="form-row">
-                    <div class="form-group  col-md-4">
+                    <div class="form-group  col-md-6">
                         <label for="inputEmail4">Email</label>
                         <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
                     </div>
-                    <div class="form-group col-6 col-md-4">
-                        <label for="usernameGroup">Username</label>
-                        <input type="text" class="form-control" id="usernameGroup" placeholder="Username" required>
-                    </div>
-                    <div class="form-group col-6 col-md-4">
+                    <div class="form-group col-md-6">
                         <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" required pattern="[A-Z|a-z|0-9]{10}">
+                        <small>10 caratteri, fra cui una lettera maiuscola, una minuscola ed un numero</small>
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <label for="inputName">Nome</label>
                         <input type="text" class="form-control" id="inputName" placeholder="Aldo" required>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                       <label for="inputCognome">Cognome</label>
                       <input type="text" class="form-control" id="inputCognome" placeholder="Rossi" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="usernameGroup">Username</label>
+                        <input type="text" class="form-control" id="usernameGroup" placeholder="Username" required>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Registrati</button>
