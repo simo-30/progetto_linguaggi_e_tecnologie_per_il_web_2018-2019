@@ -53,12 +53,12 @@
         <br>
         <ul class="list-group list-group-flush" id="bibite">
             <h2>BIBITE</h2>
-            <li class="list-group-item"><h4>Acqua 1l 1,50€</h4><button type="button" class="btn btn-outline-primary">Ordina</button></li>
-            <li class="list-group-item"><h4>Acqua 0,50l 0,50€</h4><button type="button" class="btn btn-outline-primary">Ordina</button></li>
-            <li class="list-group-item"><h4>Coca-cola 0,50l 3€</h4><button type="button" class="btn btn-outline-primary">Ordina</button></li>
-            <li class="list-group-item"><h4>Coca-cola lattina 2€</h4><button type="button" class="btn btn-outline-primary">Ordina</button></li>
-            <li class="list-group-item"><h4>Fanta 0,50l 2,50€</h4><button type="button" class="btn btn-outline-primary">Ordina</button></li>
-            <li class="list-group-item"><h4>Fanta lattina 1,50€</h4><button type="button" class="btn btn-outline-primary">Ordina</button></li>
+            <li class="list-group-item"><h4>Acqua 1l 1,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return acqua1l();" id="butt_acqua1l">Ordina</button></li>
+            <li class="list-group-item"><h4>Acqua 0,50l 0,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return acqua05l();" id="butt_acqua05l">Ordina</button></li>
+            <li class="list-group-item"><h4>Coca-cola 0,50l 3€</h4><button type="button" class="btn btn-outline-primary" onclick="return cola();" id="butt_cola">Ordina</button></li>
+            <li class="list-group-item"><h4>Coca-cola lattina 2€</h4><button type="button" class="btn btn-outline-primary" onclick="return colaLattina();" id="butt_colaLattina">Ordina</button></li>
+            <li class="list-group-item"><h4>Fanta 0,50l 2,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return fanta();" id="butt_fanta">Ordina</button></li>
+            <li class="list-group-item"><h4>Fanta lattina 1,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return fantaLattina();" id="butt_fantaLattina">Ordina</button></li>
         </ul>
         <br>
         <h2 id="tavoli">TAVOLI</h2>
@@ -122,6 +122,7 @@
                 </div>
             </div>
         </ul>
+        <button type="button" class="btn btn-outline-primary" onclick="return prenotaTavoli();" id="butt_prenotaTavoli">Prenota</button></li>
         <br><br><br><br><br>
         <div class="fixed-bottom d-inline p-2 bg-primary text-white">
             <h6>Built with ❤ by Simone e Lorenzo</h6>            
