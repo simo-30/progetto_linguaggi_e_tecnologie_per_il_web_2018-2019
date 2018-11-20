@@ -2,9 +2,19 @@
     questa è una nostra libreria JavaScript per la gestione dei vari eventi
     della pagina armando.html
 */
+//variabile globale
+var marg=0;
+
+function incrementa_quant(nome) {
+    if (nome=="Margherita") {
+        marg+=1;
+        return marg;
+    }
+}
+
 function scrivi_su_localStorage(nome, quant, prezzoUn) {
     //questa funzione scrive sul localStorage le varie cose ordinate
-    var prodotto={nome_locale: "Armando", nome_prodotto: nome, quantita: quant, prezzo_unitario: prezzoUn};
+    var prodotto={nome_locale: "Armando", nome_prodotto: nome, quantita: incrementa_quant(nome), prezzo_unitario: prezzoUn};
     var chiave=nome+"_"+quant+"_"+prezzoUn;
     var valore=JSON.stringify(prodotto);
     localStorage.setItem(chiave, valore);
