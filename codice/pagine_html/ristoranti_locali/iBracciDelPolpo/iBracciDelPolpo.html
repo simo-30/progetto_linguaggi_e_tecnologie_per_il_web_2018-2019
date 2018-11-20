@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     <script type="text/javascript" lang="javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" lang="javascript" src="../../nostra_libreria/libreria_iBracciDelPolpo.js"></script>
 </head>
 <body class="text-center">
     <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #d8ecf3;">
@@ -45,16 +46,16 @@
     </div>
     <ul class="list-group list-group-flush" id="antipasti">
         <h2>ANTIPASTI</h2>
-        <li class="list-group-item"><h4>Insalata di mare 5€</h4><button type="button" class="btn btn-outline-primary">Ordina</button></li>
-        <li class="list-group-item"><h4>Antipasto di mare 7€</h4><button type="button" class="btn btn-outline-primary">Ordina</button></li>
+        <li class="list-group-item"><h4>Insalata di mare 5€</h4><button type="button" class="btn btn-outline-primary" onclick="return insalataMare();" id="butt_insalata">Ordina</button></li>
+        <li class="list-group-item"><h4>Antipasto di mare 7€</h4><button type="button" class="btn btn-outline-primary" onclick="return antipasto();" id="butt_antipasto">Ordina</button></li>
     </ul>
     <br>
     <ul class="list-group list-group-flush" id="primi">
         <h2>PRIMI</h2>
-        <li class="list-group-item"><h4>Tonnarelli allo scoglio 12€</h4><button type="button" class="btn btn-outline-primary">Ordina</button></li>
-        <li class="list-group-item"><h4>Spaghetti alle vongole 11,50€</h4><button type="button" class="btn btn-outline-primary">Ordina</button></li>
-        <li class="list-group-item"><h4>Carbonara di pesce 13€</h4><button type="button" class="btn btn-outline-primary">Ordina</button></li>
-        <li class="list-group-item"><h4>Risotto di pesce 10€</h4><button type="button" class="btn btn-outline-primary">Ordina</button></li>
+        <li class="list-group-item"><h4>Tonnarelli allo scoglio 12€</h4><button type="button" class="btn btn-outline-primary" onclick="return tonnarelli();" id="butt_tonnarelli">Ordina</button></li>
+        <li class="list-group-item"><h4>Spaghetti alle vongole 11,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return spaghetti();" id="butt_spaghetti">Ordina</button></li>
+        <li class="list-group-item"><h4>Carbonara di pesce 13€</h4><button type="button" class="btn btn-outline-primary" onclick="return carbonara();" id="butt_carbonara">Ordina</button></li>
+        <li class="list-group-item"><h4>Risotto di pesce 10€</h4><button type="button" class="btn btn-outline-primary" onclick="return risotto();" id="butt_risotto">Ordina</button></li>
     </ul>
     <br>
     <ul class="list-group list-group-flush" id="secondi">

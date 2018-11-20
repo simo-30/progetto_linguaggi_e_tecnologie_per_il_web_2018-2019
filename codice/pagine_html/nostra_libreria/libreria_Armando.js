@@ -4,14 +4,14 @@
 */
 function scrivi_su_localStorage(nome, quant, prezzoUn) {
     //questa funzione scrive sul localStorage le varie cose ordinate
-    var prodotto={nome_prodotto: nome, quantita: quant, prezzo_unitario: prezzoUn};
+    var prodotto={nome_locale: "Armando", nome_prodotto: nome, quantita: quant, prezzo_unitario: prezzoUn};
     var chiave=nome+"_"+quant+"_"+prezzoUn;
     var valore=JSON.stringify(prodotto);
     localStorage.setItem(chiave, valore);
 }
 
 function scrivi_su_localStorage_tavoli(nome, numPersone) {
-    var prodotto={tavolo: nome, numero_persone: numPersone};
+    var prodotto={nome_locale: "Armando", tavolo: nome, numero_persone: numPersone};
     var chiave=nome+"_"+numPersone;
     var valore=JSON.stringify(prodotto);
     localStorage.setItem(chiave, valore);
