@@ -64,3 +64,35 @@ function risotto() {
     }
     alert("Hai ordinato un piatto di risotto di pesce");
 }
+
+function orata() {
+    var o=document.getElementById("butt_orata");
+    if (o!=null) {
+        scrivi_su_localStorage("Orata alla piastra", 1, 14);
+    }
+    alert("Hai ordinato un'orata alla piastra");
+}
+
+function filetto() {
+    var o=document.getElementById("butt_filetto");
+    if (o!=null) {
+        scrivi_su_localStorage("Filetto di pesce spada", 1, 15);
+    }
+    alert("Hai ordinato un filetto di pesce spada");
+}
+
+function spiedini() {
+    var o=document.getElementById("butt_spiedini");
+    if (o!=null) {
+        scrivi_su_localStorage("Spiedini di pesce", 1, 16);
+    }
+    alert("Hai ordinato degli spiedini di pesce");
+}
+
+function saute() {
+    var o=document.getElementById("butt_saute");
+    if (o!=null) {
+        scrivi_su_localStorage("Sautè di cozze e vongole", 1, 12);
+    }
+    alert("Hai ordinato un piatto di sautè di cozze e vongole");
+}
