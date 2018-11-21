@@ -13,8 +13,8 @@ var sals=0;
 
 function incrementa_quant(nome) {
     if (nome=="Tagliata di manzo") {
-        marg+=1;
-        return marg;
+        tagl+=1;
+        return tagl;
     }
     if (nome=="Bistecca fiorentina") {
         mar+=1;
