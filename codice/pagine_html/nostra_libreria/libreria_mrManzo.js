@@ -17,24 +17,47 @@ function incrementa_quant(nome) {
         return tagl;
     }
     if (nome=="Bistecca fiorentina") {
-        mar+=1;
-        return mar;
+        fiore+=1;
+        return fiore;
     }
     if (nome=="Grigliata mista di carne") {
-        diav+=1;
-        return diav;
+        grigl+=1;
+        return grigl;
     }
     if (nome=="BBQ Ribs") {
-        foc+=1;
-        return foc;
+        BBQ+=1;
+        return BBQ;
     }
     if (nome=="Tartare naturale di manzo") {
-        prosc+=1;
-        return prosc;
+        tart+=1;
+        return tart;
     }
     if (nome=="Salsiccia e crauti") {
         sals+=1;
         return sals;
+    }
+    if (nome=="Acqua 1l") {
+        a1l+=1;
+        return a1l;
+    }
+    if (nome=="Acqua 0,5l") {
+        a05l+=1;
+        return a05l;
+    }
+    if (nome=="Coca-cola 0,5l") {
+        coca+=1;
+        return coca;
+    }
+    if (nome=="Coca-cola lattina") {
+        cocaLattina+=1;
+    }
+    if (nome=="Fanta 0,5l") {
+        fan+=1;
+        return fan;
+    }
+    if (nome=="Fanta lattina") {
+        fanLattina+=1;
+        return fanLattina;
     }
 }
 
@@ -64,7 +87,7 @@ function Tagliatadimanzo() {
 function Bisteccafiorentina() {
     var o=document.getElementById("bott_fiore");
     if (o!=null) {
-        scrivi_su_localStorage("Marinara", 20);
+        scrivi_su_localStorage("Bistecca fiorentina", 20);
     }
     alert("Hai ordinato una Bistecca fiorentina");
 }
@@ -72,7 +95,7 @@ function Bisteccafiorentina() {
 function Grigliatamistadicarne() {
     var o=document.getElementById("bott_grgl");
     if (o!=null) {
-        scrivi_su_localStorage("Diavola", 12);
+        scrivi_su_localStorage("Grigliata mista di carne", 12);
     }
     alert("Hai ordinata una Grigliata mista di carne");
 }
@@ -80,7 +103,7 @@ function Grigliatamistadicarne() {
 function BBQRibs() {
     var o=document.getElementById("bott_BBQ");
     if (o!=null) {
-        scrivi_su_localStorage("Focaccia", 13);
+        scrivi_su_localStorage("BBQ Ribs", 13);
     }
     alert("Hai ordinato una BBQ Ribs");
 }
@@ -88,7 +111,7 @@ function BBQRibs() {
 function Tartarealnaturaledimanzo() {
     var o=document.getElementById("bott_tart");
     if (o!=null) {
-        scrivi_su_localStorage("Prosciutto e scamorza", 8,50);
+        scrivi_su_localStorage("Tartare al naturale di manzo", 8,50);
     }
     alert("Hai ordinato una Tartare al naturale di manzo");
 }
@@ -96,7 +119,7 @@ function Tartarealnaturaledimanzo() {
 function Salsicciaecrauti() {
     var o=document.getElementById("bott_sals");
     if (o!=null) {
-        scrivi_su_localStorage("Salsiccia e funghi", 6,50);
+        scrivi_su_localStorage("Salsiccia e crauti", 6,50);
     }
     alert("Hai ordinato una pizza salsiccia e crauti");
 }
