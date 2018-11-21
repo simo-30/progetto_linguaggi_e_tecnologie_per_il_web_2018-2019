@@ -2,20 +2,46 @@
     questa è una nostra libreria JavaScript per la gestione dei vari eventi
     della pagina armando.html
 */
-//variabile globale
+
+//variabili globali per le quantità dei prodotti
 var marg=0;
+var mar=0;
+var diav=0;
+var foc=0;
+var prosc=0;
+var sals=0;
 
 function incrementa_quant(nome) {
     if (nome=="Margherita") {
         marg+=1;
         return marg;
     }
+    if (nome=="Marinara") {
+        mar+=1;
+        return mar;
+    }
+    if (nome=="Diavola") {
+        diav+=1;
+        return diav;
+    }
+    if (nome=="Focaccia") {
+        foc+=1;
+        return foc;
+    }
+    if (nome=="Prosciutto e scamorza") {
+        prosc+=1;
+        return prosc;
+    }
+    if (nome=="Salsiccia e funghi") {
+        sals+=1;
+        return sals;
+    }
 }
 
-function scrivi_su_localStorage(nome, quant, prezzoUn) {
+function scrivi_su_localStorage(nome, prezzoUn) {
     //questa funzione scrive sul localStorage le varie cose ordinate
     var prodotto={nome_locale: "Armando", nome_prodotto: nome, quantita: incrementa_quant(nome), prezzo_unitario: prezzoUn};
-    var chiave=nome+"_"+quant+"_"+prezzoUn;
+    var chiave=nome+"_"+"_"+prezzoUn;
     var valore=JSON.stringify(prodotto);
     localStorage.setItem(chiave, valore);
 }
@@ -30,7 +56,7 @@ function scrivi_su_localStorage_tavoli(nome, numPersone) {
 function margherita() {
     var o=document.getElementById("bott_marg");
     if (o!=null) {
-        scrivi_su_localStorage("Margherita", 1, 6);
+        scrivi_su_localStorage("Margherita", 6);
     }
     alert("Hai ordinato una pizza margheirta");
 }
@@ -38,7 +64,7 @@ function margherita() {
 function marinara() {
     var o=document.getElementById("bott_mari");
     if (o!=null) {
-        scrivi_su_localStorage("Marinara", 1, 5);
+        scrivi_su_localStorage("Marinara", 5);
     }
     alert("Hai ordinato una pizza marinara");
 }
@@ -46,7 +72,7 @@ function marinara() {
 function diavola() {
     var o=document.getElementById("bott_diav");
     if (o!=null) {
-        scrivi_su_localStorage("Diavola", 1, 7.50);
+        scrivi_su_localStorage("Diavola", 7.50);
     }
     alert("Hai ordinata una pizza diavola");
 }
@@ -54,7 +80,7 @@ function diavola() {
 function focaccia() {
     var o=document.getElementById("bott_foc");
     if (o!=null) {
-        scrivi_su_localStorage("Focaccia", 1, 3);
+        scrivi_su_localStorage("Focaccia", 3);
     }
     alert("Hai ordinato una focaccia");
 }
@@ -62,7 +88,7 @@ function focaccia() {
 function prosciuttoScamorza() {
     var o=document.getElementById("bott_prosc");
     if (o!=null) {
-        scrivi_su_localStorage("Prosciutto e scamorza", 1, 7);
+        scrivi_su_localStorage("Prosciutto e scamorza", 7);
     }
     alert("Hai ordinato una pizza prosciutto e scamorza");
 }
@@ -70,7 +96,7 @@ function prosciuttoScamorza() {
 function salsicciaFunghi() {
     var o=document.getElementById("bott_sals");
     if (o!=null) {
-        scrivi_su_localStorage("Salsiccia e funghi", 1, 8);
+        scrivi_su_localStorage("Salsiccia e funghi", 8);
     }
     alert("Hai ordinato una pizza salsiccia e funghi");
 }
@@ -78,7 +104,7 @@ function salsicciaFunghi() {
 function acqua1l() {
     var o=document.getElementById("butt_acqua1l");
     if (o!=null) {
-        scrivi_su_localStorage("Acqua 1l", 1, 1.50);
+        scrivi_su_localStorage("Acqua 1l", 1.50);
     }
     alert("Hai ordinato una bottiglia di acqua da 1 litro");
 }
@@ -86,7 +112,7 @@ function acqua1l() {
 function acqua05l() {
     var o=document.getElementById("butt_acqua05l");
     if (o!=null) {
-        scrivi_su_localStorage("Acqua 0,5l", 1, 0.50);
+        scrivi_su_localStorage("Acqua 0,5l", 0.50);
     }
     alert("Hai ordinato una bottiglia di acqua da mezzo litro");
 }
@@ -94,7 +120,7 @@ function acqua05l() {
 function cola() {
     var o=document.getElementById("butt_cola");
     if (o!=null) {
-        scrivi_su_localStorage("Coca-cola 0,5l", 1, 3);
+        scrivi_su_localStorage("Coca-cola 0,5l", 3);
     }
     alert("Hai ordinato una bottiglia di coca-cola da mezzo litro");
 }
@@ -102,7 +128,7 @@ function cola() {
 function colaLattina() {
     var o=document.getElementById("butt_colaLattina");
     if (o!=null) {
-        scrivi_su_localStorage("Coca-cola lattina", 1, 2);
+        scrivi_su_localStorage("Coca-cola lattina", 2);
     }
     alert("Hai ordinato una lattina di coca-cola");
 }
@@ -110,7 +136,7 @@ function colaLattina() {
 function fanta() {
     var o=document.getElementById("butt_fanta");
     if (o!=null) {
-        scrivi_su_localStorage("Fanta 0,5l", 1, 2.50);
+        scrivi_su_localStorage("Fanta 0,5l", 2.50);
     }
     alert("Hai ordinato una bottiglia di fanta da mezzo litro");
 }
@@ -118,7 +144,7 @@ function fanta() {
 function fantaLattina() {
     var o=document.getElementById("butt_fantaLattina");
     if (o!=null) {
-        scrivi_su_localStorage("Fanta lattina", 1, 1.50);
+        scrivi_su_localStorage("Fanta lattina", 1.50);
     }
     alert("Hai ordinato una lattina di fanta");
 }
