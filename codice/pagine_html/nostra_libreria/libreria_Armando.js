@@ -10,6 +10,12 @@ var diav=0;
 var foc=0;
 var prosc=0;
 var sals=0;
+var a1l=0;
+var a05l=0;
+var coca=0;
+var cocaLattina=0;
+var fan=0;
+var fanLattina=0;
 
 function incrementa_quant(nome) {
     if (nome=="Margherita") {
@@ -35,6 +41,29 @@ function incrementa_quant(nome) {
     if (nome=="Salsiccia e funghi") {
         sals+=1;
         return sals;
+    }
+    if (nome=="Acqua 1l") {
+        a1l+=1;
+        return a1l;
+    }
+    if (nome=="Acqua 0,5l") {
+        a05l+=1;
+        return a05l;
+    }
+    if (nome=="Coca-cola 0,5l") {
+        coca+=1;
+        return coca;
+    }
+    if (nome=="Coca-cola lattina") {
+        cocaLattina+=1;
+    }
+    if (nome=="Fanta 0,5l") {
+        fan+=1;
+        return fan;
+    }
+    if (nome=="Fanta lattina") {
+        fanLattina+=1;
+        return fanLattina;
     }
 }
 
