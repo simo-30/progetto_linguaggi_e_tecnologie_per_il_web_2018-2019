@@ -20,11 +20,11 @@ var fan=0;
 
 function incrementa_quant(nome) {
     if (nome=="Bucatini all'amatriciana") {
-        ins+=1;
+        ama+=1;
         return ama;
     }
     if (nome=="Mezzemaniche alla carbonara") {
-        ant+=1;
+        carbo+=1;
         return carbo;
     }
     if (nome=="Gricia") {
@@ -109,7 +109,7 @@ function Gricia() {
     if (o!=null) {
         scrivi_su_localStorage("Gricia", 12);
     }
-    alert("Hai ordinato un piatto di Grcia");
+    alert("Hai ordinato un piatto di Gricia");
 }
 
 function Cacioepepe() {
