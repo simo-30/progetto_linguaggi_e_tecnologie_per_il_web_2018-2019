@@ -34,7 +34,7 @@ function incrementa_quant(nome) {
         BBQ+=1;
         return BBQ;
     }
-    if (nome=="Tartare naturale di manzo") {
+    if (nome=="Tartare al naturale di manzo") {
         tart+=1;
         return tart;
     }
