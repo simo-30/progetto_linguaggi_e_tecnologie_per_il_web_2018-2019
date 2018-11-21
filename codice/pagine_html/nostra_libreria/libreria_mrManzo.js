@@ -10,6 +10,12 @@ var grigl=0;
 var BBQ=0;
 var tart=0;
 var sals=0;
+var a1l=0;
+var a05l=0;
+var coca=0;
+var cocaLattina=0;
+var fan=0;
+var fanLattina=0;
 
 function incrementa_quant(nome) {
     if (nome=="Tagliata di manzo") {
