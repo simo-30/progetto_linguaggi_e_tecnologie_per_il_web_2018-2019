@@ -122,7 +122,45 @@ function saute() {
     alert("Hai ordinato un piatto di sautè di cozze e vongole");
 }
 
+function acqua() {
+    var o=document.getElementById("butt_acqua");
+    if (o!=null) {
+        scrivi_su_localStorage("Acqua 1l", 1.5);
+    }
+    alert("Hai ordinato una bottiglia di acuqa da un litro");
+}
 
+function vino_bianco() {
+    var o=document.getElementById("butt_vino_bianco");
+    if (o!=null) {
+        scrivi_su_localStorage("Vino bianco 0,75l", 3);
+    }
+    alert("Hai ordinato una bottiglia di vino bianco della casa da 0,75l");
+}
+
+function vino_rosso() {
+    var o=document.getElementById("butt_vino_rosso");
+    if (o!=null) {
+        scrivi_su_localStorage("Vino rosso 0,75l", 3);
+    }
+    alert("Hai ordinato una bottiglia di vino rosso della casa da 0,75l");
+}
+
+function cola() {
+    var o=document.getElementById("butt_cola");
+    if (o!=null) {
+        scrivi_su_localStorage("Coca-cola 0,5l", 2);
+    }
+    alert("Hai ordinato una bottiglia di coca-cola da mezzo litro");
+}
+
+function fanta() {
+    var o=document.getElementById("butt_fanta");
+    if (o!=null) {
+        scrivi_su_localStorage("Fanta 0,5l", 2);
+    }
+    alert("Hai ordinato una bottiglia di fanta da mezzo litro");
+}
 
 function prenotaTavoli() {
     var o=document.getElementById("butt_prenotaTavoli");

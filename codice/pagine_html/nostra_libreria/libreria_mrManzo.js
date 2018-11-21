@@ -56,7 +56,7 @@ function scrivi_su_localStorage_tavoli(nome, numPersone) {
 function Tagliatadimanzo() {
     var o=document.getElementById("bott_tagl");
     if (o!=null) {
-        scrivi_su_localStorage("Tagliata di manzo", 10,50);
+        scrivi_su_localStorage("Tagliata di manzo", 10.50);
     }
     alert("Hai ordinato una Tagliata di manzo");
 }
