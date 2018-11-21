@@ -61,6 +61,26 @@ function incrementa_quant(nome) {
         sau+=1;
         return sau;
     }
+    if (nome=="Acqua 1l") {
+        acq+=1;
+        return acq;
+    }
+    if (nome=="Vino bianco 0,75l") {
+        bianco+=1;
+        return bianco;
+    }
+    if (nome=="Vino rosso 0,75l") {
+        rosso+=1;
+        return rosso;
+    }
+    if (nome=="Coca-cola 0,5l") {
+        coca+=1;
+        return coca;
+    }
+    if (nome=="Fanta 0,5l") {
+        fan+=1;
+        return fan;
+    }
 }
 
 function scrivi_su_localStorage(nome, prezzoUn) {
