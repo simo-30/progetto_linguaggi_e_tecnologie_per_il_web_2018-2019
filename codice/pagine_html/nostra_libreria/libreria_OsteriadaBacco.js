@@ -20,35 +20,35 @@ var fan=0;
 
 function incrementa_quant(nome) {
     if (nome=="Bucatini all'amatriciana") {
-        ins+=1;
+        ama+=1;
         return ama;
     }
     if (nome=="Mezzemaniche alla carbonara") {
-        ant+=1;
+        carbo+=1;
         return carbo;
     }
     if (nome=="Gricia") {
-        tonn+=1;
+        gri+=1;
         return gri;
     }
     if (nome=="Cacio e pepe") {
-        spag+=1;
+        cacio+=1;
         return cacio;
     }
     if (nome=="Coda alla vaccinara") {
-        carb+=1;
+        vacci+=1;
         return vacci;
     }
     if (nome=="Ossobuco") {
-        ris+=1;
+        osso+=1;
         return osso;
     }
     if (nome=="Baccalà fritto") {
-        or+=1;
+        bacca+=1;
         return bacca;
     }
     if (nome=="Trippa alla romana") {
-        fil+=1;
+        trippa+=1;
         return trippa;
     }
     if (nome=="Acqua 1l") {
