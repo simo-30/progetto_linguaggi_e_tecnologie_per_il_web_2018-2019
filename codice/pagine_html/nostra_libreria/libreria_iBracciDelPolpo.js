@@ -10,20 +10,56 @@ var tonn=0;
 var spag=0;
 var carb=0;
 var ris=0;
-var orata=0;
+var or=0;
 var fil=0;
 var spied=0;
 var sau=0;
-var acqua=0;
+var acq=0;
 var bianco=0;
 var rosso=0;
-var cola=0;
-var fanta=0;
+var coca=0;
+var fan=0;
 
 function incrementa_quant(nome) {
     if (nome=="Insalata di mare") {
         ins+=1;
         return ins;
+    }
+    if (nome=="Antipasto di mare") {
+        ant+=1;
+        return ant;
+    }
+    if (nome=="Tonnarelli allo scoglio") {
+        tonn+=1;
+        return tonn;
+    }
+    if (nome=="Spaghetti alle vongole") {
+        spag+=1;
+        return spag;
+    }
+    if (nome=="Carbonara di pesce") {
+        carb+=1;
+        return carb;
+    }
+    if (nome=="Risotto di pesce") {
+        ris+=1;
+        return ris;
+    }
+    if (nome=="Orata alla piastra") {
+        or+=1;
+        return or;
+    }
+    if (nome=="Filetto di pesce spada") {
+        fil+=1;
+        return fil;
+    }
+    if (nome=="Spiedini di pesce") {
+        spied+=1;
+        return spied;
+    }
+    if (nome=="Sautè di cozze e vongole") {
+        sau+=1;
+        return sau;
     }
 }
 
