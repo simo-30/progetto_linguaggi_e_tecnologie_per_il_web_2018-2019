@@ -1,0 +1,3 @@
+La base di dati degli utenti sarà così fatta:
+
+NOME|COGNOME|EMAIL|USERNAME|PASSWORD

@@ -1,0 +1,4 @@
+La lista dei ristoranti sarà salvata nella seguente basi di dati,
+così fatta
+
+NOME|EMAIL|LONG|LAT
