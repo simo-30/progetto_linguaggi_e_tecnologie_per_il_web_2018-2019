@@ -1,0 +1,3 @@
+Il menù di ogni ristoranti sarà salvato in una basi di dati così fatta
+
+PIATTO|DESCRIZIONE|PREZZO
