@@ -19,8 +19,20 @@ function stampaTabellaDaStorage() {
     tab+="<tbody>";
     var i;
     for (i=0; i<l; i++) {
-        var p=localStorage.getItem(localStorage.key(i));
-        tab+='<td data-th="Product"><div class="row"><div class="col-sm-10"><h4 class="nomargin">'+p.nome_prodotto+'</h4></div></div>';
+        var p=JSON.parse(localStorage.getItem(localStorage.key(i)));
+        var nome="";
+        var pr=0;
+        var q=0;
+        tab+='<tr><td data-th="Product">';
+            nome=new String(p.nome_prodotto);
+            pr=p.prezzo_unitario;
+            q=p.quantita;
+            tab+='<div class="row"><div class="col-sm-10"><h4 class="nomargin">'+nome+'</h4></div></div></td>';
+            tab+='<td data-th="Price">'+pr+'</td>';
+            tab+='<td data-th="Quantity">'+q+'</td>';
+            tab+='<td data-th="Subtotal" class="text-center">'+pr*q+'</td>';
+        
+        tab+='</tr>';
     }
     tab+="</tbody></table>";
     document.getElementById("tabella").innerHTML=tab;
