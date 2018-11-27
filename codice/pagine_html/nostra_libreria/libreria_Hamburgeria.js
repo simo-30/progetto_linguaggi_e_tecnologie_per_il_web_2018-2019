@@ -34,7 +34,7 @@ function incrementa_quant(nome) {
         casa+=1;
         return casa;
     }
-    if (nome=="") {
+    if (nome=="Tartare al naturale di manzo") {
         tart+=1;
         return tart;
     }
