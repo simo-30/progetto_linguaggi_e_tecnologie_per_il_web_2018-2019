@@ -91,13 +91,12 @@ function scrivi_su_localStorage(nome, prezzoUn) {
     localStorage.setItem(chiave, valore);
 }
 
-function scrivi_su_localStorage_tavoli(nome, numPersone) {
-    var prodotto={nome_locale: "I bracci del polpo", tavolo: nome, numero_persone: numPersone};
-    var chiave=nome+"_"+numPersone;
+function scrivi_su_localStorage_tavoli(nome) {
+    var prodotto={nome_locale: "I bracci del polpo", nome_prodotto: nome, quantita: 1, prezzo_unitario: 0};
+    var chiave=nome;
     var valore=JSON.stringify(prodotto);
     localStorage.setItem(chiave, valore);
 }
-
 function insalataMare() {
     var o=document.getElementById("butt_insalata");
     if (o!=null) {
@@ -222,71 +221,71 @@ function prenotaTavoli() {
     var o=document.getElementById("butt_prenotaTavoli");
     if (o!=null) {
         if (document.getElementById("tavolo1").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 1", 4);
+            scrivi_su_localStorage_tavoli("Tavolo 1 da 4 persone");
             alert("Hai prenotato il tavolo 1 da 4 persone");
         }
         if (document.getElementById("tavolo2").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 2", 4);
+            scrivi_su_localStorage_tavoli("Tavolo 2 da 4 persone");
             alert("Hai prenotato il tavolo 2 da 4 persone");
         }
         if (document.getElementById("tavolo3").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 3", 4);
+            scrivi_su_localStorage_tavoli("Tavolo 3 da 4 persone");
             alert("Hai prenotato il tavolo 3 da 4 persone");
         }
         if (document.getElementById("tavolo4").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 4", 4);
+            scrivi_su_localStorage_tavoli("Tavolo 4 da 4 persone");
             alert("Hai prenotato il tavolo 4 da 4 persone");
         }
         if (document.getElementById("tavolo5").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 5", 4);
+            scrivi_su_localStorage_tavoli("Tavolo 5 da 4 persone");
             alert("Hai prenotato il tavolo 5 da 4 persone");
         }
         if (document.getElementById("tavolo6").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 6", 4);
+            scrivi_su_localStorage_tavoli("Tavolo 6 da 4 persone");
             alert("Hai prenotato il tavolo 6 da 4 persone");
         }
         if (document.getElementById("tavolo7").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 7", 4);
+            scrivi_su_localStorage_tavoli("Tavolo 7 da 4 persone");
             alert("Hai prenotato il tavolo 7 da 4 persone");
         }
         if (document.getElementById("tavolo8").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 8", 4);
+            scrivi_su_localStorage_tavoli("Tavolo 8 da 4 persone");
             alert("Hai prenotato il tavolo 8 da 4 persone");
         }
         if (document.getElementById("tavolo9").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 9", 4);
+            scrivi_su_localStorage_tavoli("Tavolo 9 da 4 persone");
             alert("Hai prenotato il tavolo 9 da 4 persone");
         }
         if (document.getElementById("tavolo10").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 10", 4);
+            scrivi_su_localStorage_tavoli("Tavolo 10 da 4 persone");
             alert("Hai prenotato il tavolo 10 da 4 persone");
         }
         if (document.getElementById("tavolo11").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 11", 6);
+            scrivi_su_localStorage_tavoli("Tavolo 11 da 6 persone");
             alert("Hai prenotato il tavolo 11 da 6 persone");
         }
         if (document.getElementById("tavolo12").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 12", 6);
+            scrivi_su_localStorage_tavoli("Tavolo 12 da 6 persone");
             alert("Hai prenotato il tavolo 12 da 6 persone");
         }
         if (document.getElementById("tavolo13").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 13", 6);
+            scrivi_su_localStorage_tavoli("Tavolo 13 da 6 persone");
             alert("Hai prenotato il tavolo 13 da 6 persone");
         }
         if (document.getElementById("tavolo14").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 14", 6);
+            scrivi_su_localStorage_tavoli("Tavolo 14 da 6 persone");
             alert("Hai prenotato il tavolo 14 da 6 persone");
         }
         if (document.getElementById("tavolo15").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 15", 6);
-            alert("Hai prenotato il tavolo 7 da 4 persone");
+            scrivi_su_localStorage_tavoli("Tavolo 15 da 6 persone");
+            alert("Hai prenotato il tavolo 15 da 6 persone");
         }
         if (document.getElementById("tavolo16").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 16", 8);
+            scrivi_su_localStorage_tavoli("Tavolo 16 da 8 persone");
             alert("Hai prenotato il tavolo 16 da 8 persone");
         }
         if (document.getElementById("tavolo17").checked) {
-            scrivi_su_localStorage_tavoli("Tavolo 17", 8);
+            scrivi_su_localStorage_tavoli("Tavolo 17 da 8 persone");
             alert("Hai prenotato il tavolo 17 da 8 persone");
         }
     }
