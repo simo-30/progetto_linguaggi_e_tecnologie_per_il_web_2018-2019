@@ -56,6 +56,7 @@ function incrementa_quant(nome) {
     }
     if (nome=="Coca-cola lattina") {
         cocaLattina+=1;
+        return cocaLattina;
     }
     if (nome=="Fanta 0,5l") {
         fan+=1;

@@ -22,7 +22,7 @@ function incrementa_quant(nome) {
         poll+=1;
         return poll;
     }
-    if (nome=="Hamburger balck angus") {
+    if (nome=="Hamburger black angus") {
         angu+=1;
         return angu;
     }
@@ -93,7 +93,7 @@ function Hamburgerpollo() {
 function Hamburgerangus() {
     var o=document.getElementById("bott_ang");
     if (o!=null) {
-        scrivi_su_localStorage("Hamburger angus", 13.50);
+        scrivi_su_localStorage("Hamburger black angus", 13.50);
     }
     alert("Hai ordinato un Hamburger black angus");
 }
