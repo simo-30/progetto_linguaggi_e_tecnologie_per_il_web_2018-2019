@@ -1,3 +1,3 @@
 {
-    "php.validatephp.validate.executablePath":/usr/bin/php
+    "php.validatephp.validate.executablePath":"/usr/bin/php"
 }
