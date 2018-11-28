@@ -23,13 +23,13 @@ function stampaTabellaDaStorage() {
         var p=JSON.parse(localStorage.getItem(localStorage.key(i)));
         tab+='<tr><td data-th="Product">';
         tab+='<div class="row"><div class="col-sm-10"><h4 class="nomargin">'+p.nome_prodotto+'</h4><small>'+p.nome_locale+'</div></div></td>';
-        tab+='<td data-th="Price">'+p.prezzo_unitario+'</td>';
+        tab+='<td data-th="Price">'+p.prezzo_unitario+' €</td>';
         tab+='<td data-th="Quantity">'+p.quantita+'</td>';
-        tab+='<td data-th="Subtotal" class="text-center">'+p.prezzo_unitario*p.quantita+'</td>';
+        tab+='<td data-th="Subtotal" class="text-center">'+p.prezzo_unitario*p.quantita+' €</td>';
         tab+='</tr>';
         tot+=p.prezzo_unitario*p.quantita;
     }
-    tab+='<tfoot><tr class="visible-xs"><td class="text-center"><strong>Total '+tot+'</strong></td></tr>';
+    tab+='<tfoot><tr class="visible-xs"><td class="text-center"><strong>Total '+tot+' €</strong></td></tr>';
     tab+='<tr><td><a href="../pagina_Scelta_Ristoranti/lista_Ristoranti.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continua ad ordinare</a></td>';
     tab+='<td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td></tr>';
     tab+="</tbody></table>";
