@@ -1,7 +1,7 @@
 /*
     libreria per la gestione del carrello
 */
-
+/*
 function stampaStorageSemplice(){
     var l=localStorage.length;
     var carr=new String("<h3>Questo è il carrello</h3>");
@@ -12,6 +12,7 @@ function stampaStorageSemplice(){
     document.getElementById("vistaStorage").innerHTML=carr;
     return true;
 }
+*/
 
 function stampaTabellaDaStorage() {
     var l=localStorage.length;
