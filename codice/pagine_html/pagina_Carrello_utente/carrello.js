@@ -29,7 +29,7 @@ function stampaTabellaDaStorage() {
         tab+='</tr>';
         tot+=p.prezzo_unitario*p.quantita;
     }
-    tab+='<tfoot><tr class="visible-xs"><td class="text-center"><strong>Total '+tot+' €</strong></td></tr>';
+    tab+='<tfoot><tr class="visible-xs"><td class="text-center"><strong>Totale '+tot+' €</strong></td></tr>';
     tab+='<tr><td><a href="../pagina_Scelta_Ristoranti/lista_Ristoranti.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continua ad ordinare</a></td>';
     tab+='<td><a href="../pagina_Pagamento_Ordine/pagamento.html" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td></tr>';
     tab+="</tbody></table>";
