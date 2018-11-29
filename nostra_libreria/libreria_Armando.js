@@ -88,7 +88,7 @@ function margherita() {
     if (o!=null) {
         scrivi_su_localStorage("Margherita", 6);
     }
-    alert("Hai ordinato una pizza margheirta");
+    alert("Hai ordinato una pizza margherita");
 }
 
 function marinara() {
