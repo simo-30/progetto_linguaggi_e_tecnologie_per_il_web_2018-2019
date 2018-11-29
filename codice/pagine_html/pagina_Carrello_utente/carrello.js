@@ -26,6 +26,7 @@ function stampaTabellaDaStorage() {
         tab+='<td data-th="Price">'+p.prezzo_unitario+' €</td>';
         tab+='<td data-th="Quantity">'+p.quantita+'</td>';
         tab+='<td data-th="Subtotal" class="text-center">'+p.prezzo_unitario*p.quantita+' €</td>';
+        tab+='<td><button type="button" class="btn btn-danger">Cancella</button></td>';
         tab+='</tr>';
         tot+=p.prezzo_unitario*p.quantita;
     }
