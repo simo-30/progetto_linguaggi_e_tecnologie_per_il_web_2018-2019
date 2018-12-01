@@ -33,7 +33,8 @@ function stampaTabellaDaStorage() {
     }
     tab+='<tfoot><tr class="visible-xs"><td class="text-center"><strong>Totale '+tot+' €</strong></td></tr>';
     tab+='<tr><td><a href="../pagina_Scelta_Ristoranti/lista_Ristoranti.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continua ad ordinare</a></td>';
-    tab+='<td><a href="../pagina_Pagamento_Ordine/pagamento.html" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td></tr>';
+    tab+='<td><a href="../pagina_Pagamento_Ordine/pagamento.html" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>';
+    tab+='<td><button class="btn btn-danger" onclick="return cancellaTutto();">Svuota cestino</button></td></tr>';
     tab+="</tbody></table>";
     document.getElementById("tabella").innerHTML=tab;
     return true;
@@ -41,5 +42,11 @@ function stampaTabellaDaStorage() {
 
 function cancellaProdotto(nome) {
     localStorage.removeItem(nome);
+    return true;
+}
+
+function cancellaTutto() {
+    localStorage.clear();
+    location.reload();
     return true;
 }
