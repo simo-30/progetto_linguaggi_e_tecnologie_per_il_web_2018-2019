@@ -84,47 +84,6 @@ function scrivi_su_localStorage_tavoli(nome) {
     localStorage.setItem(chiave, valore);
 }
 
-
-function marinara() {
-    var o=document.getElementById("bott_mari");
-    if (o!=null) {
-        scrivi_su_localStorage("Marinara", 5);
-    }
-    alert("Hai ordinato una pizza marinara");
-}
-
-function diavola() {
-    var o=document.getElementById("bott_diav");
-    if (o!=null) {
-        scrivi_su_localStorage("Diavola", 7.50);
-    }
-    alert("Hai ordinata una pizza diavola");
-}
-
-function focaccia() {
-    var o=document.getElementById("bott_foc");
-    if (o!=null) {
-        scrivi_su_localStorage("Focaccia", 3);
-    }
-    alert("Hai ordinato una focaccia");
-}
-
-function prosciuttoScamorza() {
-    var o=document.getElementById("bott_prosc");
-    if (o!=null) {
-        scrivi_su_localStorage("Prosciutto e scamorza", 7);
-    }
-    alert("Hai ordinato una pizza prosciutto e scamorza");
-}
-
-function salsicciaFunghi() {
-    var o=document.getElementById("bott_sals");
-    if (o!=null) {
-        scrivi_su_localStorage("Salsiccia e funghi", 8);
-    }
-    alert("Hai ordinato una pizza salsiccia e funghi");
-}
-
 function acqua1l() {
     var o=document.getElementById("butt_acqua1l");
     if (o!=null) {
