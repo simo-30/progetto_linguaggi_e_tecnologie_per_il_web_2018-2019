@@ -89,38 +89,6 @@ function scrivi_su_localStorage_tavoli(nome) {
     localStorage.setItem(chiave, valore);
 }
 
-function Codaallavaccinara() {
-    var o=document.getElementById("butt_vacci");
-    if (o!=null) {
-        scrivi_su_localStorage("Coda alla vaccinara", 14);
-    }
-    alert("Hai ordinato un piatto di coda alla vaccinara");
-}
-
-function Ossobuco() {
-    var o=document.getElementById("butt_osso");
-    if (o!=null) {
-        scrivi_su_localStorage("Ossobuco", 11.30);
-    }
-    alert("Hai ordinato un piatto di ossobuco");
-}
-
-function Baccalàfritto() {
-    var o=document.getElementById("butt_bacca");
-    if (o!=null) {
-        scrivi_su_localStorage("Baccalà fritto", 10);
-    }
-    alert("Hai ordinato un piatto di baccalà fritto");
-}
-
-function Trippaallaromana() {
-    var o=document.getElementById("butt_trippa");
-    if (o!=null) {
-        scrivi_su_localStorage("Trippa alla romana", 11.50);
-    }
-    alert("Hai ordinato un piatto di trippa alla romana");
-}
-
 function prenotaTavoli() {
     var o=document.getElementById("butt_prenotaTavoli");
     if (o!=null) {
