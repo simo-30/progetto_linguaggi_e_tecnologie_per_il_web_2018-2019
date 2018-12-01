@@ -79,22 +79,6 @@ function scrivi_su_localStorage_tavoli(nome) {
     localStorage.setItem(chiave, valore);
 }
 
-function Tartarealnaturaledimanzo() {
-    var o=document.getElementById("bott_tart");
-    if (o!=null) {
-        scrivi_su_localStorage("Tartare al naturale di manzo", 8.50);
-    }
-    alert("Hai ordinato una Tartare al naturale di manzo");
-}
-
-function Salsicciaecrauti() {
-    var o=document.getElementById("bott_sals");
-    if (o!=null) {
-        scrivi_su_localStorage("Salsiccia e crauti", 6.50);
-    }
-    alert("Hai ordinato una pizza salsiccia e crauti");
-}
-
 function prenotaTavoli() {
     var o=document.getElementById("butt_prenotaTavoli");
     if (o!=null) {

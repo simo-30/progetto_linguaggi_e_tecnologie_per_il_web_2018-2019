@@ -79,6 +79,7 @@ function scrivi_su_localStorage(nome, prezzoUn) {
     var chiave=nome+"_"+"_"+prezzoUn;
     var valore=JSON.stringify(prodotto);
     localStorage.setItem(chiave, valore);
+    alert("Hai ordinato:\n"+nome);
 }
 
 function scrivi_su_localStorage_tavoli(nome) {
@@ -86,39 +87,6 @@ function scrivi_su_localStorage_tavoli(nome) {
     var chiave=nome;
     var valore=JSON.stringify(prodotto);
     localStorage.setItem(chiave, valore);
-}
-
-
-function Bucatiniallamatriciana() {
-    var o=document.getElementById("butt_ama");
-    if (o!=null) {
-        scrivi_su_localStorage("Bucatini all'amatriciana", 11);
-    }
-    alert("Hai ordinato un piatto di bucatini all'amatriciana");
-}
-
-function Mezzemanicheallacarbonara() {
-    var o=document.getElementById("butt_carbo");
-    if (o!=null) {
-        scrivi_su_localStorage("Mezzemaniche alla carbonara", 11);
-    }
-    alert("Hai ordinato un piatto di mezzemaniche alla carbonara");
-}
-
-function Gricia() {
-    var o=document.getElementById("butt_gri");
-    if (o!=null) {
-        scrivi_su_localStorage("Gricia", 12);
-    }
-    alert("Hai ordinato un piatto di Gricia");
-}
-
-function Cacioepepe() {
-    var o=document.getElementById("butt_cacio");
-    if (o!=null) {
-        scrivi_su_localStorage("Cacio e pepe", 11);
-    }
-    alert("Hai ordinato un piatto di cacio e pepe");
 }
 
 function Codaallavaccinara() {
@@ -140,7 +108,7 @@ function Ossobuco() {
 function Baccalàfritto() {
     var o=document.getElementById("butt_bacca");
     if (o!=null) {
-        scrivi_su_localStorage("Bccalà fritto", 10);
+        scrivi_su_localStorage("Baccalà fritto", 10);
     }
     alert("Hai ordinato un piatto di baccalà fritto");
 }
@@ -151,46 +119,6 @@ function Trippaallaromana() {
         scrivi_su_localStorage("Trippa alla romana", 11.50);
     }
     alert("Hai ordinato un piatto di trippa alla romana");
-}
-
-function acqua() {
-    var o=document.getElementById("butt_acqua");
-    if (o!=null) {
-        scrivi_su_localStorage("Acqua 1l", 1.5);
-    }
-    alert("Hai ordinato una bottiglia di acuqa da un litro");
-}
-
-function vino_bianco() {
-    var o=document.getElementById("butt_vino_bianco");
-    if (o!=null) {
-        scrivi_su_localStorage("Vino bianco 0,75l", 3);
-    }
-    alert("Hai ordinato una bottiglia di vino bianco della casa da 0,75l");
-}
-
-function vino_rosso() {
-    var o=document.getElementById("butt_vino_rosso");
-    if (o!=null) {
-        scrivi_su_localStorage("Vino rosso 0,75l", 3);
-    }
-    alert("Hai ordinato una bottiglia di vino rosso della casa da 0,75l");
-}
-
-function cola() {
-    var o=document.getElementById("butt_cola");
-    if (o!=null) {
-        scrivi_su_localStorage("Coca-cola 0,5l", 2);
-    }
-    alert("Hai ordinato una bottiglia di coca-cola da mezzo litro");
-}
-
-function fanta() {
-    var o=document.getElementById("butt_fanta");
-    if (o!=null) {
-        scrivi_su_localStorage("Fanta 0,5l", 2);
-    }
-    alert("Hai ordinato una bottiglia di fanta da mezzo litro");
 }
 
 function prenotaTavoli() {
