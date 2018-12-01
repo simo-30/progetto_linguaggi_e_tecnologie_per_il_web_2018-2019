@@ -27,7 +27,7 @@ function stampaTabellaDaStorage() {
         tab+='<td data-th="Price">'+p.prezzo_unitario+' €</td>';
         tab+='<td data-th="Quantity">'+p.quantita+'</td>';
         tab+='<td data-th="Subtotal" class="text-center">'+p.prezzo_unitario*p.quantita+' €</td>';
-        tab+='<td><button type="button" class="btn btn-danger" onclick="return cancellaProdotto('+localStorage.key(i)+');">Cancella</button></td>';
+        /*tab+='<td><button type="button" class="btn btn-danger">Cancella</button></td>';*/
         tab+='</tr>';
         tot+=p.prezzo_unitario*p.quantita;
     }
@@ -37,12 +37,6 @@ function stampaTabellaDaStorage() {
     tab+='<td><button class="btn btn-danger" onclick="return cancellaTutto();">Svuota carrello</button></td></tr>';
     tab+="</tbody></table>";
     document.getElementById("tabella").innerHTML=tab;
-    return true;
-}
-
-function cancellaProdotto(nome) {
-    localStorage.removeItem(nome);
-    location.reload();
     return true;
 }
 
