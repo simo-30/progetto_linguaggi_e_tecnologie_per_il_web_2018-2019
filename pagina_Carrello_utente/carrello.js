@@ -41,4 +41,5 @@ function stampaTabellaDaStorage() {
 
 function cancellaProdotto(nome) {
     localStorage.removeItem(nome);
+    return true;
 }
