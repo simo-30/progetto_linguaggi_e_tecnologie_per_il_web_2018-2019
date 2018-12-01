@@ -89,6 +89,7 @@ function scrivi_su_localStorage(nome, prezzoUn) {
     var chiave=nome+"_"+"_"+prezzoUn;
     var valore=JSON.stringify(prodotto);
     localStorage.setItem(chiave, valore);
+    alert("Hai ordinato:\n"+nome);
 }
 
 function scrivi_su_localStorage_tavoli(nome) {
@@ -96,125 +97,6 @@ function scrivi_su_localStorage_tavoli(nome) {
     var chiave=nome;
     var valore=JSON.stringify(prodotto);
     localStorage.setItem(chiave, valore);
-}
-function insalataMare() {
-    var o=document.getElementById("butt_insalata");
-    if (o!=null) {
-        scrivi_su_localStorage("Insalata di mare", 5);
-    }
-    alert("Hai ordinato un'insalata di mare");
-}
-
-function antipasto() {
-    var o=document.getElementById("butt_antipasto");
-    if (o!=null) {
-        scrivi_su_localStorage("Antipasto di mare", 7);
-    }
-    alert("Hai ordinato un antipasto di mare");
-}
-
-function tonnarelli() {
-    var o=document.getElementById("butt_tonnarelli");
-    if (o!=null) {
-        scrivi_su_localStorage("Tonnarelli allo scoglio", 12);
-    }
-    alert("Hai ordinato un piatto di tonnarelli allo scoglio");
-}
-
-function spaghetti() {
-    var o=document.getElementById("butt_spaghetti");
-    if (o!=null) {
-        scrivi_su_localStorage("Spaghetti alle vongole", 11.50);
-    }
-    alert("Hai ordinato un piatto di spaghetti alle vongole");
-}
-
-function carbonara() {
-    var o=document.getElementById("butt_carbonara");
-    if (o!=null) {
-        scrivi_su_localStorage("Carbonara di pesce", 13);
-    }
-    alert("Hai ordinato un piatto di carbonara di pesce");
-}
-
-function risotto() {
-    var o=document.getElementById("butt_risotto");
-    if (o!=null) {
-        scrivi_su_localStorage("Risotto di pesce", 10);
-    }
-    alert("Hai ordinato un piatto di risotto di pesce");
-}
-
-function orata() {
-    var o=document.getElementById("butt_orata");
-    if (o!=null) {
-        scrivi_su_localStorage("Orata alla piastra", 14);
-    }
-    alert("Hai ordinato un'orata alla piastra");
-}
-
-function filetto() {
-    var o=document.getElementById("butt_filetto");
-    if (o!=null) {
-        scrivi_su_localStorage("Filetto di pesce spada", 15);
-    }
-    alert("Hai ordinato un filetto di pesce spada");
-}
-
-function spiedini() {
-    var o=document.getElementById("butt_spiedini");
-    if (o!=null) {
-        scrivi_su_localStorage("Spiedini di pesce", 16);
-    }
-    alert("Hai ordinato degli spiedini di pesce");
-}
-
-function saute() {
-    var o=document.getElementById("butt_saute");
-    if (o!=null) {
-        scrivi_su_localStorage("Sautè di cozze e vongole", 12);
-    }
-    alert("Hai ordinato un piatto di sautè di cozze e vongole");
-}
-
-function acqua() {
-    var o=document.getElementById("butt_acqua");
-    if (o!=null) {
-        scrivi_su_localStorage("Acqua 1l", 1.5);
-    }
-    alert("Hai ordinato una bottiglia di acuqa da un litro");
-}
-
-function vino_bianco() {
-    var o=document.getElementById("butt_vino_bianco");
-    if (o!=null) {
-        scrivi_su_localStorage("Vino bianco 0,75l", 3);
-    }
-    alert("Hai ordinato una bottiglia di vino bianco della casa da 0,75l");
-}
-
-function vino_rosso() {
-    var o=document.getElementById("butt_vino_rosso");
-    if (o!=null) {
-        scrivi_su_localStorage("Vino rosso 0,75l", 3);
-    }
-    alert("Hai ordinato una bottiglia di vino rosso della casa da 0,75l");
-}
-
-function cola() {
-    var o=document.getElementById("butt_cola");
-    if (o!=null) {
-        scrivi_su_localStorage("Coca-cola 0,5l", 2);
-    }
-    alert("Hai ordinato una bottiglia di coca-cola da mezzo litro");
-}
-
-function fanta() {
-    var o=document.getElementById("butt_fanta");
-    if (o!=null) {
-        scrivi_su_localStorage("Fanta 0,5l", 2);
-    }
-    alert("Hai ordinato una bottiglia di fanta da mezzo litro");
 }
 
 function prenotaTavoli() {

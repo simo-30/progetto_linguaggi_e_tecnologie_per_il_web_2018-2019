@@ -48,33 +48,33 @@
     </div>
     <ul class="list-group list-group-flush" id="antipasti">
         <h2>ANTIPASTI</h2>
-        <li class="list-group-item"><h4>Insalata di mare 5€</h4><button type="button" class="btn btn-outline-primary" onclick="return insalataMare();" id="butt_insalata">Ordina</button></li>
-        <li class="list-group-item"><h4>Antipasto di mare 7€</h4><button type="button" class="btn btn-outline-primary" onclick="return antipasto();" id="butt_antipasto">Ordina</button></li>
+        <li class="list-group-item"><h4>Insalata di mare 5€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Insalata di mare', 5);">Ordina</button></li>
+        <li class="list-group-item"><h4>Antipasto di mare 7€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Antipasto di mare', 7);">Ordina</button></li>
     </ul>
     <br>
     <ul class="list-group list-group-flush" id="primi">
         <h2>PRIMI</h2>
-        <li class="list-group-item"><h4>Tonnarelli allo scoglio 12€</h4><button type="button" class="btn btn-outline-primary" onclick="return tonnarelli();" id="butt_tonnarelli">Ordina</button></li>
-        <li class="list-group-item"><h4>Spaghetti alle vongole 11,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return spaghetti();" id="butt_spaghetti">Ordina</button></li>
-        <li class="list-group-item"><h4>Carbonara di pesce 13€</h4><button type="button" class="btn btn-outline-primary" onclick="return carbonara();" id="butt_carbonara">Ordina</button></li>
-        <li class="list-group-item"><h4>Risotto di pesce 10€</h4><button type="button" class="btn btn-outline-primary" onclick="return risotto();" id="butt_risotto">Ordina</button></li>
+        <li class="list-group-item"><h4>Tonnarelli allo scoglio 12€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Tonnarelli allo scoglio', 12);">Ordina</button></li>
+        <li class="list-group-item"><h4>Spaghetti alle vongole 11,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Spaghetti alle vongole', 11.50);">Ordina</button></li>
+        <li class="list-group-item"><h4>Carbonara di pesce 13€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Carbonara di pesce', 13);">Ordina</button></li>
+        <li class="list-group-item"><h4>Risotto di pesce 10€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Risotto di pesce', 10);">Ordina</button></li>
     </ul>
     <br>
     <ul class="list-group list-group-flush" id="secondi">
         <h2>SECONDI</h2>
-        <li class="list-group-item"><h4>Orata alla piastra 14€</h4><button type="button" class="btn btn-outline-primary" onclick="return orata();" id="butt_orata">Ordina</button></li>
-        <li class="list-group-item"><h4>Filetto di pesce spada 15€</h4><button type="button" class="btn btn-outline-primary" onclick="return filetto();" id="butt_filetto">Ordina</button></li>
-        <li class="list-group-item"><h4>Spiedini di pesce 16€</h4><button type="button" class="btn btn-outline-primary" onclick="return spiedini();" id="butt_spiedini">Ordina</button></li>
-        <li class="list-group-item"><h4>Sautè di cozze e vongole 12€</h4><button type="button" class="btn btn-outline-primary" onclick="return saute();" id="butt_saute">Ordina</button></li>
+        <li class="list-group-item"><h4>Orata alla piastra 14€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Orata alla piastra', 14);">Ordina</button></li>
+        <li class="list-group-item"><h4>Filetto di pesce spada 15€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Filetto di pesce spada', 15);">Ordina</button></li>
+        <li class="list-group-item"><h4>Spiedini di pesce 16€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Spiedini di pesce', 16);">Ordina</button></li>
+        <li class="list-group-item"><h4>Sautè di cozze e vongole 12€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Sautè di cozze e vongole', 12);">Ordina</button></li>
     </ul>
     <br>
     <ul class="list-group list-group-flush" id="bibite">
         <h2>BIBITE</h2>
-        <li class="list-group-item"><h4>Acqua 1l 1,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return acqua();" id="butt_acqua">Ordina</button></li>
-        <li class="list-group-item"><h4>Vino bianco della casa 0,75l 3€</h4><button type="button" class="btn btn-outline-primary" onclick="return vino_bianco();" id="butt_vino_bianco">Ordina</button></li>
-        <li class="list-group-item"><h4>Vino rosso della casa 0,75l 3€</h4><button type="button" class="btn btn-outline-primary" onclick="return vino_rosso();" id="butt_vino_rosso">Ordina</button></li>
-        <li class="list-group-item"><h4>Coca-cola 0,5l 2€</h4><button type="button" class="btn btn-outline-primary" onclick="return cola();" id="butt_cola">Ordina</button></li>
-        <li class="list-group-item"><h4>Fanta 0,5l 2€</h4><button type="button" class="btn btn-outline-primary" onclick="return fanta();" id="butt_fanta">Ordina</button></li>
+        <li class="list-group-item"><h4>Acqua 1l 1,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Acqua 1l', 1.5);">Ordina</button></li>
+        <li class="list-group-item"><h4>Vino bianco della casa 0,75l 3€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Vino bianco 0,75l', 3);">Ordina</button></li>
+        <li class="list-group-item"><h4>Vino rosso della casa 0,75l 3€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Vino rosso 0,75l', 3);">Ordina</button></li>
+        <li class="list-group-item"><h4>Coca-cola 0,5l 2€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Coca-cola 0,5l', 2);">Ordina</button></li>
+        <li class="list-group-item"><h4>Fanta 0,5l 2€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Fanta 0,5l', 2);">Ordina</button></li>
     </ul>
     <br>
     <h2 id="tavoli">TAVOLI</h2>
