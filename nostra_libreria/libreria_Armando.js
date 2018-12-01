@@ -74,6 +74,7 @@ function scrivi_su_localStorage(nome, prezzoUn) {
     var chiave=nome+"_"+"_"+prezzoUn;
     var valore=JSON.stringify(prodotto);
     localStorage.setItem(chiave, valore);
+    alert("Hai ordinato:\n"+nome);
 }
 
 function scrivi_su_localStorage_tavoli(nome) {
@@ -83,13 +84,6 @@ function scrivi_su_localStorage_tavoli(nome) {
     localStorage.setItem(chiave, valore);
 }
 
-function margherita() {
-    var o=document.getElementById("bott_marg");
-    if (o!=null) {
-        scrivi_su_localStorage("Margherita", 6);
-    }
-    alert("Hai ordinato una pizza margherita");
-}
 
 function marinara() {
     var o=document.getElementById("bott_mari");
