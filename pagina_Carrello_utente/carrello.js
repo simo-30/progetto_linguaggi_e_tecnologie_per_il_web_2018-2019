@@ -13,7 +13,6 @@ function stampaStorageSemplice(){
     return true;
 }
 */
-
 function stampaTabellaDaStorage() {
     var l=localStorage.length;
     var tot=0;
