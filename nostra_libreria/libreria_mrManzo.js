@@ -6,7 +6,6 @@
 //variabili globali per le quantità dei prodotti
 var tagl=0;
 var fiore=0;
-var grigl=0;
 var BBQ=0;
 var tart=0;
 var sals=0;
@@ -25,10 +24,6 @@ function incrementa_quant(nome) {
     if (nome=="Bistecca fiorentina") {
         fiore+=1;
         return fiore;
-    }
-    if (nome=="Grigliata mista di carne") {
-        grigl+=1;
-        return grigl;
     }
     if (nome=="BBQ Ribs") {
         BBQ+=1;
@@ -56,6 +51,7 @@ function incrementa_quant(nome) {
     }
     if (nome=="Coca-cola lattina") {
         cocaLattina+=1;
+        return cocaLattina;
     }
     if (nome=="Fanta 0,5l") {
         fan+=1;
@@ -73,6 +69,7 @@ function scrivi_su_localStorage(nome, prezzoUn) {
     var chiave=nome+"_"+"_"+prezzoUn;
     var valore=JSON.stringify(prodotto);
     localStorage.setItem(chiave, valore);
+    alert("Hai ordinato:\n"+nome);
 }
 
 function scrivi_su_localStorage_tavoli(nome) {
@@ -80,102 +77,6 @@ function scrivi_su_localStorage_tavoli(nome) {
     var chiave=nome;
     var valore=JSON.stringify(prodotto);
     localStorage.setItem(chiave, valore);
-}
-
-function Tagliatadimanzo() {
-    var o=document.getElementById("bott_tagl");
-    if (o!=null) {
-        scrivi_su_localStorage("Tagliata di manzo", 10.50);
-    }
-    alert("Hai ordinato una Tagliata di manzo");
-}
-
-function Bisteccafiorentina() {
-    var o=document.getElementById("bott_fiore");
-    if (o!=null) {
-        scrivi_su_localStorage("Bistecca fiorentina", 20);
-    }
-    alert("Hai ordinato una Bistecca fiorentina");
-}
-
-function Grigliatamistadicarne() {
-    var o=document.getElementById("bott_grgl");
-    if (o!=null) {
-        scrivi_su_localStorage("Grigliata mista di carne", 12);
-    }
-    alert("Hai ordinata una Grigliata mista di carne");
-}
-
-function BBQRibs() {
-    var o=document.getElementById("bott_BBQ");
-    if (o!=null) {
-        scrivi_su_localStorage("BBQ Ribs", 13);
-    }
-    alert("Hai ordinato una BBQ Ribs");
-}
-
-function Tartarealnaturaledimanzo() {
-    var o=document.getElementById("bott_tart");
-    if (o!=null) {
-        scrivi_su_localStorage("Tartare al naturale di manzo", 8.50);
-    }
-    alert("Hai ordinato una Tartare al naturale di manzo");
-}
-
-function Salsicciaecrauti() {
-    var o=document.getElementById("bott_sals");
-    if (o!=null) {
-        scrivi_su_localStorage("Salsiccia e crauti", 6.50);
-    }
-    alert("Hai ordinato una pizza salsiccia e crauti");
-}
-
-function acqua1l() {
-    var o=document.getElementById("butt_acqua1l");
-    if (o!=null) {
-        scrivi_su_localStorage("Acqua 1l", 1.50);
-    }
-    alert("Hai ordinato una bottiglia di acqua da 1 litro");
-}
-
-function acqua05l() {
-    var o=document.getElementById("butt_acqua05l");
-    if (o!=null) {
-        scrivi_su_localStorage("Acqua 0,5l", 0.50);
-    }
-    alert("Hai ordinato una bottiglia di acqua da mezzo litro");
-}
-
-function cola() {
-    var o=document.getElementById("butt_cola");
-    if (o!=null) {
-        scrivi_su_localStorage("Coca-cola 0,5l", 3);
-    }
-    alert("Hai ordinato una bottiglia di coca-cola da mezzo litro");
-}
-
-function colaLattina() {
-    var o=document.getElementById("butt_colaLattina");
-    if (o!=null) {
-        scrivi_su_localStorage("Coca-cola lattina", 2);
-    }
-    alert("Hai ordinato una lattina di coca-cola");
-}
-
-function fanta() {
-    var o=document.getElementById("butt_fanta");
-    if (o!=null) {
-        scrivi_su_localStorage("Fanta 0,5l", 2.50);
-    }
-    alert("Hai ordinato una bottiglia di fanta da mezzo litro");
-}
-
-function fantaLattina() {
-    var o=document.getElementById("butt_fantaLattina");
-    if (o!=null) {
-        scrivi_su_localStorage("Fanta lattina", 1.50);
-    }
-    alert("Hai ordinato una lattina di fanta");
 }
 
 function prenotaTavoli() {

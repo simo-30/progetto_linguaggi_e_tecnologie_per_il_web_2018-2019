@@ -45,22 +45,22 @@
         </div>
         <ul class="list-group list-group-flush" id="pizze">
             <h2>PIZZE</h2>
-            <li class="list-group-item"><h4>Margherita 6€</h4>pomodoro, mozzarella, basilico<br><button type="button" class="btn btn-outline-primary" id="bott_marg" onclick="return margherita();">Ordina</button></li>
-            <li class="list-group-item"><h4>Marinara 5€</h4>pomodoro, aglio, acciughe<br><button type="button" class="btn btn-outline-primary" onclick="return marinara();" id="bott_mari">Ordina</button></li>
-            <li class="list-group-item"><h4>Diavola 7,50€</h4>pomodoro, mozzarella, salame piccante<br><button type="button" class="btn btn-outline-primary" onclick="return diavola();" id="bott_diav">Ordina</button></li>
-            <li class="list-group-item"><h4>Focaccia 3€</h4>olio, rosmarino<br><button type="button" class="btn btn-outline-primary" onclick="return focaccia();" id="bott_foc">Ordina</button></li>
-            <li class="list-group-item"><h4>Prosciutto e scamorza 7€</h4>prosciutto crudo, scamorza<br><button type="button" class="btn btn-outline-primary" onclick="return prosciuttoScamorza();" id="bott_prosc">Ordina</button></li>
-            <li class="list-group-item"><h4>Salsiccia e funghi 8€</h4>salsiccia, funghi, mozzarella<br><button type="button" class="btn btn-outline-primary" onclick="return salsicciaFunghi();" id="bott_sals">Ordina</button></li>
+            <li class="list-group-item"><h4>Margherita 6€</h4>pomodoro, mozzarella, basilico<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Margherita', 6);">Ordina</button></li>
+            <li class="list-group-item"><h4>Marinara 5€</h4>pomodoro, aglio, acciughe<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Marinara', 5);">Ordina</button></li>
+            <li class="list-group-item"><h4>Diavola 7,50€</h4>pomodoro, mozzarella, salame piccante<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Diavola', 7.50);">Ordina</button></li>
+            <li class="list-group-item"><h4>Focaccia 3€</h4>olio, rosmarino<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Focaccia', 3);">Ordina</button></li>
+            <li class="list-group-item"><h4>Prosciutto e scamorza 7€</h4>prosciutto crudo, scamorza<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Prosciutto e scamorza', 7);">Ordina</button></li>
+            <li class="list-group-item"><h4>Salsiccia e funghi 8€</h4>salsiccia, funghi, mozzarella<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Salsiccia e funghi', 8);">Ordina</button></li>
         </ul>
         <br>
         <ul class="list-group list-group-flush" id="bibite">
             <h2>BIBITE</h2>
-            <li class="list-group-item"><h4>Acqua 1l 1,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return acqua1l();" id="butt_acqua1l">Ordina</button></li>
-            <li class="list-group-item"><h4>Acqua 0,50l 0,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return acqua05l();" id="butt_acqua05l">Ordina</button></li>
-            <li class="list-group-item"><h4>Coca-cola 0,50l 3€</h4><button type="button" class="btn btn-outline-primary" onclick="return cola();" id="butt_cola">Ordina</button></li>
-            <li class="list-group-item"><h4>Coca-cola lattina 2€</h4><button type="button" class="btn btn-outline-primary" onclick="return colaLattina();" id="butt_colaLattina">Ordina</button></li>
-            <li class="list-group-item"><h4>Fanta 0,50l 2,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return fanta();" id="butt_fanta">Ordina</button></li>
-            <li class="list-group-item"><h4>Fanta lattina 1,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return fantaLattina();" id="butt_fantaLattina">Ordina</button></li>
+            <li class="list-group-item"><h4>Acqua 1l 1,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Acqua 1l', 1.50);">Ordina</button></li>
+            <li class="list-group-item"><h4>Acqua 0,50l 0,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Acqua 0,5l', 0.50);">Ordina</button></li>
+            <li class="list-group-item"><h4>Coca-cola 0,50l 3€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Coca-cola 0,5l', 3);">Ordina</button></li>
+            <li class="list-group-item"><h4>Coca-cola lattina 2€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Coca-cola lattina', 2);">Ordina</button></li>
+            <li class="list-group-item"><h4>Fanta 0,50l 2,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Fanta 0,5l', 2.50);">Ordina</button></li>
+            <li class="list-group-item"><h4>Fanta lattina 1,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Fanta lattina', 1.50);">Ordina</button></li>
         </ul>
         <br>
         <h2 id="tavoli">TAVOLI</h2>
