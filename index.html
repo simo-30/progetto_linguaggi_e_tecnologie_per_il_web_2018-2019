@@ -8,6 +8,7 @@
     <script type="text/javascript" lang="javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" lang="javascript" src="js/bootstrap.bundle.js"></script>
     <script type="text/javascript" lang="javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" lang="javascript" src="login.js"></script>
     </head>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
@@ -36,18 +37,18 @@
         <h5>Quando l'attesa ti uccide, tu saltala!</h5> 
         <br><br>
         
-        <form>
+        <form id="log">
             <div class="container">          
             <div class="form-group">
-              <label for="exampleInputEmail1">Inserisci email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-              <small id="emailHelp" class="form-text text-muted">Non condivideremo mai la tua email.</small>
+              <label>Inserisci email</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+              <small class="form-text text-muted">Non condivideremo mai la tua email.</small>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
             </div>
-            <button type="submit" class="btn btn-primary" onclick="">Login</button>
+            <a class="btn btn-primary" href="pagina_Scelta_Ristoranti/lista_Ristoranti.html" role="button" onclick="return identificati();">Registrati</a>
             </div>
         </form>
           
