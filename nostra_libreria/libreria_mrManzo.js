@@ -63,20 +63,20 @@ function incrementa_quant(nome) {
     }
 }
 
-function scrivi_su_localStorage(nome, prezzoUn) {
+function scrivi_su_localStorage(nome, prezzoUn) { //in realtà sarebbe sessionStorage, ma non mi va di riscrivere il codice :)
     //questa funzione scrive sul localStorage le varie cose ordinate
-    var prodotto={nome_locale: "Mr Manzo", nome_prodotto: nome, quantita: incrementa_quant(nome), prezzo_unitario: prezzoUn};
+    var prodotto={nome_locale: "Armando", nome_prodotto: nome, quantita: incrementa_quant(nome), prezzo_unitario: prezzoUn};
     var chiave=nome+"_"+"_"+prezzoUn;
     var valore=JSON.stringify(prodotto);
-    localStorage.setItem(chiave, valore);
+    sessionStorage.setItem(chiave, valore);
     alert("Hai ordinato:\n"+nome);
 }
 
 function scrivi_su_localStorage_tavoli(nome) {
-    var prodotto={nome_locale: "Mr Manzo", nome_prodotto: nome, quantita: 1, prezzo_unitario: 0};
+    var prodotto={nome_locale: "Armando", nome_prodotto: nome, quantita: 1, prezzo_unitario: 0};
     var chiave=nome;
     var valore=JSON.stringify(prodotto);
-    localStorage.setItem(chiave, valore);
+    sessionStorage.setItem(chiave, valore);
 }
 
 function prenotaTavoli() {

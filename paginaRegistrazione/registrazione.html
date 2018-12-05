@@ -7,6 +7,7 @@
         <link href="../css/bootstrap.css" rel="stylesheet"/>
         <link href="signin.css" rel="stylesheet"/>
         <script type="text/javascript" lang="javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript" lang="javascript" src="registrazione.js"></script>
     </head>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
@@ -24,12 +25,7 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pagina_Scelta_Ristoranti/lista_Ristoranti.html">Lista ristoranti</a>
-                    </li>
-                </ul>
-                <a href="../pagina_Carrello_utente/carrello.html" class="btn btn-primary btn-lg align-bottom" role="button"><i class="fas fa-cart-plus"></i> Carrello</a>   
-          
+                </ul> 
             </div>             
         </nav>
 
@@ -37,11 +33,11 @@
         <h5>Effettua una nuova registrazione</h5>
         
         <ul class="pagination justify-content-center">
-        <form method="POST" action="registrazione.php">
+        <form name="reg">
                 <div class="form-row">
                     <div class="form-group  col-md-6">
                         <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required name="email">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required name="email">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="inputPassword4">Password</label>
@@ -59,10 +55,10 @@
                     </div>
                     <div class="form-group col-md-4">
                         <label for="usernameGroup">Username</label>
-                        <input type="text" class="form-control" id="usernameGroup" placeholder="Username" required name="username">
+                        <input type="text" class="form-control" id="inputUsername" placeholder="Username" required name="username">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary" name="registrationButton">Registrati</button>
+                <a class="btn btn-primary" href="../index.html" role="button" onclick="return registra();">Registrati</a>
                 <a class="btn btn-primary" href="../index.html" role="button">Home</a>
         </form>
         </ul>
