@@ -3,13 +3,13 @@
 */
 
 function stampaTabellaDaStorage() {
-    var l=localStorage.length;
+    var l=sessionStorage.length;
     var tot=0;
     var tab=new String('<table id="cart" class="table table-hover table-condensed"><thead><tr><th style="width:50%">Prodotto</th><th style="width:10%">Prezzo</th><th style="width:8%">Quantità</th><th style="width:22%" class="text-center">Totale</th><th style="width:10%"></th></tr></thead>');
     tab+="<tbody>";
     var i;
     for (i=0; i<l; i++) {
-        var p=JSON.parse(localStorage.getItem(localStorage.key(i)));
+        var p=JSON.parse(sessionStorage.getItem(sessionStorage.key(i)));
         if (p.nome_locale!=null) {
             tab+='<tr><td data-th="Product">';
             tab+='<div class="row"><div class="col-sm-10"><h4 class="nomargin">'+p.nome_prodotto+'</h4><small>'+p.nome_locale+'</div></div></td>';
@@ -30,25 +30,14 @@ function stampaTabellaDaStorage() {
     return true;
 }
 
-function cancellaTutto() {
+function cancellaTuttoLocalStorage() {
     localStorage.clear();
     location.reload();
     return true;
 }
 
 function cancellaCarrello() {
-    var i; 
-    var l=localStorage.length;
-    for (i=0; i<l; i++) {
-        var key=localStorage.key(i);
-        var o=JSON.parse(localStorage.getItem(key));
-        if (o.nome_locale!=null) {
-            localStorage.removeItem(key);
-        }
-        else {
-            continue;
-        }
-    }
+    sessionStorage.clear();
     location.reload();
     return true;
 }
