@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header
+{
+    background-image: url(immagini/colazione.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formbox
+{
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+}

@@ -2,12 +2,13 @@
 <html>
     <head>
     <title>Food Skip</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-    <script type="text/javascript" lang="javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" lang="javascript" src="js/bootstrap.bundle.js"></script>
-    <script type="text/javascript" lang="javascript" src="js/bootstrap.bundle.min.js"></script>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" lang="javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" lang="javascript" src="js/bootstrap.bundle.js"></script>
+        <script type="text/javascript" lang="javascript" src="js/bootstrap.bundle.min.js"></script>
     </head>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
@@ -36,26 +37,32 @@
             </div>            
         </nav>
         
-        <br>
-        <h1>Food Skip</h1>
-        <h5>Quando l'attesa ti uccide, tu saltala!</h5> 
-        <br><br>
-        
-        <form>
-            <div class="container">          
-            <div class="form-group">
-              <label for="exampleInputEmail1">Inserisci email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-              <small id="emailHelp" class="form-text text-muted">Non condivideremo mai la tua email.</small>
+        <!-- Inizio sezione primaria con immagine background -->
+
+        <div class="header">
+            <br>
+            <h1>Food Skip</h1>
+            <h5>Quando l'attesa ti uccide, tu saltala!</h5> 
+            <br><br>
+
+            <div class="formbox">
+                <form>
+                    <div class="container">          
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Inserisci email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    <small id="emailHelp" class="form-text text-muted">Non condivideremo mai la tua email.</small>
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="">Login</button>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-            </div>
-            <button type="submit" class="btn btn-primary" onclick="">Login</button>
-            </div>
-        </form>
-          
+        </div>
+            
         <br><br><br><br>
         <h4>Scopri i nostri ristoranti </h4>
         <br>
@@ -135,10 +142,23 @@
             </div>
         </ul>
         <br><br>
-        <h3>Sei il proprietario di un ristorante?</h3>
-        <h6>Scrivici per registrarti al nostro ristorante</h6>
-        <a href="mailto:info@foodskip.com" class="btn btn-primary btn-lg" role="button">Contattaci ora!</a>
 
+        <!-- Sezione orizzontale per Ristoratori -->
+        <div class="section clearfix" style="background-color: #eff3f6;">
+            <div class="container">
+                <div class="row lp-section-content clearfix">
+                    <div class="col-sm-12">
+                        <br>
+                        <h3>Sei il proprietario di un ristorante? </h3>
+                        <p>Scrivici per registrarti al nostro portale.</p>
+                        <div class="calltoaction-right-panel">
+                            <a href="mailto:info@foodskip.com" class="btn btn-primary btn-lg" role="button">Contattaci ora!</a>
+                        </div>
+                        <br>
+                    </div>      
+                </div>     
+            </div>
+        </div>
 
         <br><br><br><br><br>
 
