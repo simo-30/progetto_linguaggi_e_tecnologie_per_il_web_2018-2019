@@ -3,12 +3,12 @@
 */
 
 function identificati() {
-    var mail=document.log.inputEmail.value;
+    var mail=document.getElementById("inputEmail").value;
     if (mail=="") {
         alert("Inserisci un'email!");
         return false;
     }
-    var passw=document.log.inputPassword.value;
+    var passw=document.getElementById("inputPassword").value;
     if (passw=="") {
         alert("Inserisci una password!");
         return false;
