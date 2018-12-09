@@ -16,19 +16,19 @@ function controllaSeGiaPresente(e) {
 
 function registra() {
     var n, c, e, p, u;
-    e=document.reg.inputEmail.value;
+    e=document.getElementById("inputEmail").value;
     if (e=="") {
-        alert("Riempi tutti i campi!!");
+        alert("Inserisci un'email!");
         return false;
     }
     if (controllaSeGiaPresente(e)) {
         alert("Sei già registrato, accedi con le tue credenziali");
-        return false;
+        return true;
     }
-    n=document.reg.inputName.value;
-    c=document.reg.inputCognome.value;
-    p=document.reg.inputPassword.value;
-    u=document.reg.inputUsername.value;
+    n=document.getElementById("inputNome").value;
+    c=document.getElementById("inputCognome").value;
+    p=document.getElementById("inputPassword").value;
+    u=document.getElementById("inputUsername").value;
     if (n=="" || c=="" || p=="" || u=="") {
         alert("Riempi tutti i campi!!");
         return false;
