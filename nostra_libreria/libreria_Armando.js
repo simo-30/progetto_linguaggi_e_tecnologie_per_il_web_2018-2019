@@ -121,3 +121,10 @@ function prenotaTavoli() {
         }
     }
 }
+
+function ilTuoPiatto(piatto, prezzo) {
+    var puls="";
+    puls+='<li class="list-group-item"><h4>Crea '+piatto+' '+prezzo+'€</h4><br><button type="button" class="btn btn-outline-primary" onclick="">Crea</button></li>';
+    document.getElementById("tuoPiatto").innerHTML=puls;
+    return true;
+}
