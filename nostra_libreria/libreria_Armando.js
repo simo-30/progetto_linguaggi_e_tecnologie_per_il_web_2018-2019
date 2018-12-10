@@ -21,6 +21,7 @@ var piatto=0;
 //variabile che contiene tutti gli ingredienti possibili per il piatto
 var opz=["Pomodoro", "Mozzarella", "Salsiccia", "Salame", "Gorgonzola", "Patatine fritte", "Formaggio", "Prosciutto crudo"];
 var ingr="";
+var listIngr="";
 
 function incrementa_quant(nome) {
     if (nome=="Margherita") {
@@ -152,12 +153,15 @@ function opzPiatto() {
     tab+="</table><br>";
     tab+="<ul class=\"list-group\"><h5>La tua pizza è composta da:</h5>";
     tab+="<div id=\"miaPizza\"></div>";
-    tab+="</ul>";
+    tab+="</ul><br>";
     tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'La tua pizza\', 10);">Ordina</button></li>';
     document.getElementById("tuoPiatto").innerHTML=tab;
     return true;
 }
 
 function addIngr(cibo) {
-    alert(cibo);
+    ingr+=cibo+" ";
+    var lista=document.getElementById("miaPizza");
+    listIngr+="<li class='list-group-item'>"+cibo+"</li>";
+    lista.innerHTML=listIngr;
 }
