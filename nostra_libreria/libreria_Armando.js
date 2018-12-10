@@ -138,7 +138,7 @@ function ilTuoPiatto(piatto, prezzo) {
     return true;
 }
 
-function opzPiatto(piatto) {
+function opzPiatto() {
     var i, l=opz.length;
     var tab="";
     var larg=100/l;
@@ -146,7 +146,7 @@ function opzPiatto(piatto) {
     tab+="<thead><h4>Questi sono gli ingredienti che puoi aggiungere alla tua pizza</h4></thead>";
     tab+="<tr>";
     for (i=0; i<l; i++) {
-        tab+='<td width="'+larg+'%"><button type="button" class="btn btn-outline-success" onclick="return addIngr('+opz[i].toString+');">'+opz[i]+'</button></td>';
+        tab+='<td width="'+larg+'%"><button type="button" class="btn btn-outline-success" onclick="return addIngr(\''+opz[i]+'\');">'+opz[i]+'</button></td>';
     }
     tab+="</tr>";
     tab+="</table><br>";
@@ -155,4 +155,9 @@ function opzPiatto(piatto) {
     tab+="</ul>";
     tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'La tua pizza\', 10);">Ordina</button></li>';
     document.getElementById("tuoPiatto").innerHTML=tab;
+    return true;
+}
+
+function addIngr(cibo) {
+    alert(cibo);
 }
