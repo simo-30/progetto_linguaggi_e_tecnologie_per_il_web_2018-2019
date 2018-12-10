@@ -20,6 +20,7 @@ var piatto=0;
 
 //variabile che contiene tutti gli ingredienti possibili per il piatto
 var opz=["Pomodoro", "Mozzarella", "Salsiccia", "Salame", "Gorgonzola", "Patatine fritte", "Formaggio"];
+var ingr="";
 
 function incrementa_quant(nome) {
     if (nome=="Margherita") {
@@ -70,7 +71,7 @@ function incrementa_quant(nome) {
         fanLattina+=1;
         return fanLattina;
     }
-    if (nome=="Il tuo piatto") {
+    if (nome=="La tua pizza") {
         piatto+=1;
         return piatto;
     }
@@ -145,9 +146,10 @@ function opzPiatto() {
     tab+="<thead><h4>Questi sono gli ingredienti che puoi aggiungere alla tua pizza</h4></thead>";
     tab+="<tr>";
     for (i=0; i<l; i++) {
-        tab+='<td width="'+larg+'%"><button type="button" class="btn btn-outline-primary">'+opz[i]+'</button></td>';
+        tab+='<td width="'+larg+'%"><button type="button" class="btn btn-outline-primary" onclick="return addIngr('+opz[i].toString+');">'+opz[i]+'</button></td>';
     }
     tab+="</tr>";
-    tab+="</tab></li>";
+    tab+="</table>";
+    tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'La tua pizza\', 10);">Ordina</button></li>';
     document.getElementById("tuoPiatto").innerHTML=tab;
 }
