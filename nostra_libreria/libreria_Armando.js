@@ -16,6 +16,10 @@ var coca=0;
 var cocaLattina=0;
 var fan=0;
 var fanLattina=0;
+var piatto=0;
+
+//variabile che contiene tutti gli ingredienti possibili per il piatto
+var opz=["Pomodoro", "Mozzarella", "Salsiccia", "Salame", "Gorgonzola", "Patatine fritte", "Formaggio"];
 
 function incrementa_quant(nome) {
     if (nome=="Margherita") {
@@ -65,6 +69,10 @@ function incrementa_quant(nome) {
     if (nome=="Fanta lattina") {
         fanLattina+=1;
         return fanLattina;
+    }
+    if (nome=="Il tuo piatto") {
+        piatto+=1;
+        return piatto;
     }
 }
 
@@ -124,7 +132,22 @@ function prenotaTavoli() {
 
 function ilTuoPiatto(piatto, prezzo) {
     var puls="";
-    puls+='<li class="list-group-item"><h4>Crea '+piatto+' '+prezzo+'€</h4><br><button type="button" class="btn btn-outline-primary" onclick="">Crea</button></li>';
+    puls+='<li class="list-group-item"><h4>Crea '+piatto+' '+prezzo+'€</h4><button type="button" class="btn btn-outline-primary" onclick="return opzPiatto();">Crea</button></li>';
     document.getElementById("tuoPiatto").innerHTML=puls;
     return true;
+}
+
+function opzPiatto() {
+    var i, l=opz.length;
+    var tab="";
+    var larg=100/l;
+    tab+="<li class='list-group-item'><table width='100%'>";
+    tab+="<thead><h4>Questi sono gli ingredienti che puoi aggiungere alla tua pizza</h4></thead>";
+    tab+="<tr>";
+    for (i=0; i<l; i++) {
+        tab+='<td width="'+larg+'%"><button type="button" class="btn btn-outline-primary">'+opz[i]+'</button></td>';
+    }
+    tab+="</tr>";
+    tab+="</tab></li>";
+    document.getElementById("tuoPiatto").innerHTML=tab;
 }
