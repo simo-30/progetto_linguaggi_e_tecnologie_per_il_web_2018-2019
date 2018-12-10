@@ -154,13 +154,12 @@ function opzPiatto() {
     tab+="<ul class=\"list-group\"><h5>La tua pizza è composta da:</h5>";
     tab+="<div id=\"miaPizza\"></div>";
     tab+="</ul><br>";
-    tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'La tua pizza\', 10);">Ordina</button></li>';
+    tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage("La tua pizza", 10);">Ordina</button></li>';
     document.getElementById("tuoPiatto").innerHTML=tab;
     return true;
 }
 
 function addIngr(cibo) {
-    ingr+=cibo+" ";
     var lista=document.getElementById("miaPizza");
     listIngr+="<li class='list-group-item'>"+cibo+"</li>";
     lista.innerHTML=listIngr;
