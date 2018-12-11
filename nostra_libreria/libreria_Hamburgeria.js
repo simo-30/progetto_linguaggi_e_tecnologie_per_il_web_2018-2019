@@ -148,8 +148,9 @@ function opzPiatto() {
     }
     tab+="</tr>";
     tab+="</table><br>";
+    tab+="<div id='panino'></div>";
     tab+="<ul class=\"list-group\"><h5>Il tuo hamburger è composto da:</h5>";
-    tab+="<div id=\"mioHamburger\"></div>";
+    tab+="<div id=\"mioHamburger\"></div><br><br>";
     tab+="</ul><br>";
     tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'Il tuo hamburger\', 12);">Ordina</button></li>';
     document.getElementById("tuoPiatto").innerHTML=tab;
@@ -160,5 +161,12 @@ function addIngr(cibo) {
     var lista=document.getElementById("mioHamburger");
     listIngr+="<li class='list-group-item'>"+cibo+"</li>";
     lista.innerHTML=listIngr;
+    var bk=document.createElement("br");
+    var ingrImg=document.getElementById("panino");
+    var obj=document.createElement("img");
+    obj.setAttribute("src", cibo+".png");
+    obj.setAttribute("height", "50px");
+    ingrImg.appendChild(obj);
+    ingrImg.appendChild(bk);
     return true;
 }
