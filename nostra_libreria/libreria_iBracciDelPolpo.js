@@ -22,7 +22,7 @@ var fan=0;
 var piatto=0;
 
 //variabili per la gestione della creazione del piatto
-var opz=["Linguine", "Spaghetti", "Pomodori pachino", "Frutti di mare", "Cozze", "Vongole", "Cannolicchi", "Salmone"];
+var opz=["Pennette", "Spaghetti", "Pomodori pachino", "Frutti di mare", "Cozze", "Vongole", "Cannolicchi", "Salmone"];
 var listIngr="";
 
 function incrementa_quant(nome) {
@@ -201,6 +201,8 @@ function opzPiatto() {
     }
     tab+="</tr>";
     tab+="</table><br>";
+    tab+="<div id='primo'></div>";
+    tab+="<img src='Piatto.png' height='70px'><br><br>";
     tab+="<ul class=\"list-group\"><h5>Il tuo primo di pesce è composta da:</h5>";
     tab+="<div id=\"mioPrimoDiPesce\"></div>";
     tab+="</ul><br>";
@@ -213,5 +215,12 @@ function addIngr(cibo) {
     var lista=document.getElementById("mioPrimoDiPesce");
     listIngr+="<li class='list-group-item'>"+cibo+"</li>";
     lista.innerHTML=listIngr;
+    var bk=document.createElement("br");
+    var ingrImg=document.getElementById("primo");
+    var obj=document.createElement("img");
+    obj.setAttribute("src", cibo+".png");
+    obj.setAttribute("height", "70px");
+    ingrImg.appendChild(obj);
+    ingrImg.appendChild(bk);
     return true;
 }
