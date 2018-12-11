@@ -19,8 +19,7 @@ var fanLattina=0;
 var piatto=0;
 
 //variabile che contiene tutti gli ingredienti possibili per il piatto
-var opz=["Pomodoro", "Mozzarella", "Salsiccia", "Salame", "Gorgonzola", "Patatine fritte", "Formaggio", "Prosciutto crudo", "Provola"];
-var ingr="";
+var opz=["Pomodoro", "Salsiccia", "Patatine", "Formaggio", "Cotto", "Crudo", "Mozzarella"];
 var listIngr="";
 
 function incrementa_quant(nome) {
@@ -151,6 +150,7 @@ function opzPiatto() {
     }
     tab+="</tr>";
     tab+="</table><br>";
+    tab+="<div id='pizza'></div><br><br>";
     tab+="<ul class=\"list-group\"><h5>La tua pizza è composta da:</h5>";
     tab+="<div id=\"miaPizza\"></div>";
     tab+="</ul><br>";
@@ -163,5 +163,10 @@ function addIngr(cibo) {
     var lista=document.getElementById("miaPizza");
     listIngr+="<li class='list-group-item'>"+cibo+"</li>";
     lista.innerHTML=listIngr;
+    var ingrImg=document.getElementById("pizza");
+    var obj=document.createElement("img");
+    obj.setAttribute("src", cibo+".png");
+    obj.setAttribute("height", "70px");
+    ingrImg.appendChild(obj);
     return true;
 }
