@@ -85,6 +85,7 @@ function scrivi_su_localStorage(nome, prezzoUn) { //in realtà sarebbe sessionSt
     var valore=JSON.stringify(prodotto);
     sessionStorage.setItem(chiave, valore);
     alert("Hai ordinato:\n"+nome);
+    location.reload();
 }
 
 function scrivi_su_localStorage_tavoli(nome) {
