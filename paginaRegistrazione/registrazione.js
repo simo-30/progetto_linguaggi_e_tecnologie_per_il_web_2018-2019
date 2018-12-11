@@ -8,6 +8,7 @@ function controllaSeGiaPresente(e) {
     for (i=0; i<l; i++) {
         var o=JSON.parse(localStorage.getItem(localStorage.key(i)));
         if (o.email!=null && o.email==e) {
+            alert("Sei già registrato, accedi con le tue credenziali");
             return true;
         }
     }
@@ -22,10 +23,9 @@ function registra() {
         return false;
     }
     if (controllaSeGiaPresente(e)) {
-        alert("Sei già registrato, accedi con le tue credenziali");
         return true;
     }
-    n=document.getElementById("inputNome").value;
+    n=document.getElementById("inputName").value;
     c=document.getElementById("inputCognome").value;
     p=document.getElementById("inputPassword").value;
     u=document.getElementById("inputUsername").value;
