@@ -18,7 +18,7 @@ var fan=0;
 var fanLattina=0;
 var piatto=0;
 
-var opz=["Hamburger 180gr", "Hamburger di pollo", "Insalata", "Pancetta", "Pomodoro", "Ketchup", "Maionese", "Formaggio"];
+var opz=["Hamburger 180gr", "Hamburger di pollo", "Patatine", "Uovo", "Pancetta", "Insalata", "Pomodoro", "Ketchup", "Maionese", "Formaggio"];
 var listIngr="";
 
 function incrementa_quant(nome) {
@@ -148,9 +148,11 @@ function opzPiatto() {
     }
     tab+="</tr>";
     tab+="</table><br>";
+    tab+="<img src='parte_superiore.png' height='70px'>";
     tab+="<div id='panino'></div>";
+    tab+="<img src='parte_inferiore.png' height='70px'><br><br>";
     tab+="<ul class=\"list-group\"><h5>Il tuo hamburger è composto da:</h5>";
-    tab+="<div id=\"mioHamburger\"></div><br><br>";
+    tab+="<div id=\"mioHamburger\"></div>";
     tab+="</ul><br>";
     tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'Il tuo hamburger\', 12);">Ordina</button></li>';
     document.getElementById("tuoPiatto").innerHTML=tab;
@@ -165,7 +167,7 @@ function addIngr(cibo) {
     var ingrImg=document.getElementById("panino");
     var obj=document.createElement("img");
     obj.setAttribute("src", cibo+".png");
-    obj.setAttribute("height", "50px");
+    obj.setAttribute("height", "70px");
     ingrImg.appendChild(obj);
     ingrImg.appendChild(bk);
     return true;
