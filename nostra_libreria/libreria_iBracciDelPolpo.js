@@ -19,6 +19,11 @@ var bianco=0;
 var rosso=0;
 var coca=0;
 var fan=0;
+var piatto=0;
+
+//variabili per la gestione della creazione del piatto
+var opz=["Linguine", "Spaghetti", "Pomodori pachino", "Frutti di mare", "Cozze", "Vongole", "Cannolicchi", "Salmone"];
+var listIngr="";
 
 function incrementa_quant(nome) {
     if (nome=="Insalata di mare") {
@@ -80,6 +85,10 @@ function incrementa_quant(nome) {
     if (nome=="Fanta 0,5l") {
         fan+=1;
         return fan;
+    }
+    if (nome=="Il tuo primo di pesce") {
+        piatto+=1;
+        return piatto;
     }
 }
 
@@ -171,4 +180,38 @@ function prenotaTavoli() {
             alert("Hai prenotato il tavolo 17 da 8 persone");
         }
     }
+}
+
+function ilTuoPiatto(piatto, prezzo) {
+    var puls="";
+    puls+='<li class="list-group-item"><h4>Crea '+piatto+' '+prezzo+'€</h4><button type="button" class="btn btn-outline-primary" onclick="return opzPiatto();">Crea</button></li>';
+    document.getElementById("tuoPiatto").innerHTML=puls;
+    return true;
+}
+
+function opzPiatto() {
+    var i, l=opz.length;
+    var tab="";
+    var larg=100/l;
+    tab+="<li class='list-group-item'><table width='100%'>";
+    tab+="<thead><h4>Questi sono gli ingredienti che puoi aggiungere al tuo primo di pesce</h4></thead>";
+    tab+="<tr>";
+    for (i=0; i<l; i++) {
+        tab+='<td width="'+larg+'%"><button type="button" class="btn btn-outline-success" onclick="return addIngr(\''+opz[i]+'\');">'+opz[i]+'</button></td>';
+    }
+    tab+="</tr>";
+    tab+="</table><br>";
+    tab+="<ul class=\"list-group\"><h5>Il tuo primo di pesce è composta da:</h5>";
+    tab+="<div id=\"mioPrimoDiPesce\"></div>";
+    tab+="</ul><br>";
+    tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'Il tuo primo di pesce\', 15);">Ordina</button></li>';
+    document.getElementById("tuoPiatto").innerHTML=tab;
+    return true;
+}
+
+function addIngr(cibo) {
+    var lista=document.getElementById("mioPrimoDiPesce");
+    listIngr+="<li class='list-group-item'>"+cibo+"</li>";
+    lista.innerHTML=listIngr;
+    return true;
 }
