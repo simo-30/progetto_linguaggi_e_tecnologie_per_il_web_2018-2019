@@ -18,7 +18,7 @@ var fan=0;
 var fanLattina=0;
 var piatto=0;
 
-var opz=["Hamburger 180gr", "Hamburger di pollo", "Patatine", "Uovo", "Pancetta", "Insalata", "Pomodoro", "Ketchup", "Maionese", "Formaggio"];
+var opz=["Hamburger", "Patatine", "Uovo", "Pancetta", "Insalata", "Pomodoro", "Formaggio"];
 var listIngr="";
 
 function incrementa_quant(nome) {
