@@ -19,7 +19,7 @@ var coca=0;
 var fan=0;
 var piatto=0;
 
-var opz=[];
+var opz=["Pasta", "Pancetta", "Pomodoro", "Uovo"];
 var listIngr="";
 
 function incrementa_quant(nome) {
