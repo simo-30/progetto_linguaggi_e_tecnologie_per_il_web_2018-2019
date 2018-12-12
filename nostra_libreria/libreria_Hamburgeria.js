@@ -170,7 +170,7 @@ function addIngr(cibo) {
     var ingrImg=document.getElementById("panino");
     var obj=document.createElement("img");
     obj.setAttribute("src", cibo+".png");
-    obj.setAttribute("height", "70px");
+    obj.setAttribute("height", "100px");
     ingrImg.appendChild(obj);
     ingrImg.appendChild(bk);
     return true;

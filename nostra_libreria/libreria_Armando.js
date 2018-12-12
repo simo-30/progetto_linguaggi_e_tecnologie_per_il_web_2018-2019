@@ -170,7 +170,7 @@ function addIngr(cibo) {
     var ingrImg=document.getElementById("pizza");
     var obj=document.createElement("img");
     obj.setAttribute("src", cibo+".png");
-    obj.setAttribute("height", "70px");
+    obj.setAttribute("height", "100px");
     ingrImg.appendChild(obj);
     return true;
 }
