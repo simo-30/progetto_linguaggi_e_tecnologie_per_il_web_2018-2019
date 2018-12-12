@@ -126,3 +126,44 @@ function prenotaTavoli() {
         }
     }
 }
+
+function ilTuoPiatto(piatto, prezzo) {
+    var puls="";
+    puls+='<li class="list-group-item"><h4>Crea '+piatto+' '+prezzo+'€</h4><button type="button" class="btn btn-outline-primary" onclick="return opzPiatto();">Crea</button></li>';
+    document.getElementById("tuoPiatto").innerHTML=puls;
+    return true;
+}
+
+function opzPiatto() {
+    var i, l=opz.length;
+    var tab="";
+    var larg=100/l;
+    tab+="<li class='list-group-item'><table width='100%'>";
+    tab+="<thead><h4>Questi sono gli ingredienti che puoi aggiungere al tuo piatto</h4><small class='form-text text-muted'>Le immagini sono puramente illustrative</small></thead>";
+    tab+="<tr>";
+    for (i=0; i<l; i++) {
+        tab+='<td width="'+larg+'%"><button type="button" class="btn btn-outline-success" onclick="return addIngr(\''+opz[i]+'\');">'+opz[i]+'</button></td>';
+    }
+    tab+="</tr>";
+    tab+="</table><br>";
+    tab+="<div id='pizza'></div>";
+    tab+="<img src='piatto.png' height='70px' width='100%'><br><br>";
+    tab+="<ul class=\"list-group\"><h5>Il tuo piatto è composto da:</h5>";
+    tab+="<div id=\"miaPizza\"></div>";
+    tab+="</ul><br>";
+    tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'La tua pizza\', 10);">Ordina</button></li>';
+    document.getElementById("tuoPiatto").innerHTML=tab;
+    return true;
+}
+
+function addIngr(cibo) {
+    var lista=document.getElementById("miaPizza");
+    listIngr+="<li class='list-group-item'>"+cibo+"</li>";
+    lista.innerHTML=listIngr;
+    var ingrImg=document.getElementById("pizza");
+    var obj=document.createElement("img");
+    obj.setAttribute("src", cibo+".png");
+    obj.setAttribute("height", "70px");
+    ingrImg.appendChild(obj);
+    return true;
+}
