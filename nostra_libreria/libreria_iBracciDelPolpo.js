@@ -203,9 +203,9 @@ function opzPiatto() {
     tab+="</table><br>";
     tab+="<div id='primo'></div>";
     tab+="<img src='Piatto.png' height='70px' width='100%'><br><br>";
-    tab+="<ul class=\"list-group\"><h5>Il tuo primo di pesce è composto da:</h5>";
+    tab+="<h5>Il tuo primo di pesce è composto da:</h5>";
     tab+="<div id=\"mioPrimoDiPesce\"></div>";
-    tab+="</ul><br>";
+    tab+="<br>";
     tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'Il tuo primo di pesce\', 15);">Ordina</button></li>';
     document.getElementById("tuoPiatto").innerHTML=tab;
     return true;

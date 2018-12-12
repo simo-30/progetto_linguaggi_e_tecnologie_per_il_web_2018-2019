@@ -151,9 +151,9 @@ function opzPiatto() {
     tab+="<img src='parte_superiore.png' height='70px'>";
     tab+="<div id='panino'></div>";
     tab+="<img src='parte_inferiore.png' height='70px'><br><br>";
-    tab+="<ul class=\"list-group\"><h5>Il tuo hamburger è composto da:</h5>";
+    tab+="<h5>Il tuo hamburger è composto da:</h5>";
     tab+="<div id=\"mioHamburger\"></div>";
-    tab+="</ul><br>";
+    tab+="<br>";
     tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'Il tuo hamburger\', 12);">Ordina</button></li>';
     document.getElementById("tuoPiatto").innerHTML=tab;
     return true;

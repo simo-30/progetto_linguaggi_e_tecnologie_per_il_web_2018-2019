@@ -152,9 +152,9 @@ function opzPiatto() {
     tab+="</table><br>";
     tab+="<div id='pizza'></div>";
     tab+="<img src='Base_bianca.png' height='70px' width='100%'><br><br>";
-    tab+="<ul class=\"list-group\"><h5>La tua pizza è composta da:</h5>";
+    tab+="<h5>La tua pizza è composta da:</h5>";
     tab+="<div id=\"miaPizza\"></div>";
-    tab+="</ul><br>";
+    tab+="<br>";
     tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'La tua pizza\', 10);">Ordina</button></li>';
     document.getElementById("tuoPiatto").innerHTML=tab;
     return true;
