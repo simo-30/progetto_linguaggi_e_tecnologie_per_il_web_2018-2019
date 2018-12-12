@@ -15,6 +15,10 @@ var coca=0;
 var cocaLattina=0;
 var fan=0;
 var fanLattina=0;
+var piatto=0;
+
+var opz=["Fettina", "Salsiccia"];
+var listIngr="";
 
 function incrementa_quant(nome) {
     if (nome=="Tagliata di manzo") {
@@ -60,6 +64,10 @@ function incrementa_quant(nome) {
     if (nome=="Fanta lattina") {
         fanLattina+=1;
         return fanLattina;
+    }
+    if (nome="Il tuo piatto di carne") {
+        piatto+=1;
+        return piatto;
     }
 }
 
@@ -115,4 +123,45 @@ function prenotaTavoli() {
             alert("Hai prenotato il tavolo 8 da 6 persone");
         }
     }
+}
+
+function ilTuoPiatto(piatto, prezzo) {
+    var puls="";
+    puls+='<li class="list-group-item"><h4>Crea '+piatto+' '+prezzo+'€</h4><button type="button" class="btn btn-outline-primary" onclick="return opzPiatto();">Crea</button></li>';
+    document.getElementById("tuoPiatto").innerHTML=puls;
+    return true;
+}
+
+function opzPiatto() {
+    var i, l=opz.length;
+    var tab="";
+    var larg=100/l;
+    tab+="<li class='list-group-item'><table width='100%'>";
+    tab+="<thead><h4>Questi sono gli ingredienti che puoi aggiungere al tuo piatto di carne</h4><small class='form-text text-muted'>Le immagini sono puramente illustrative</small></thead>";
+    tab+="<tr>";
+    for (i=0; i<l; i++) {
+        tab+='<td width="'+larg+'%"><button type="button" class="btn btn-outline-success" onclick="return addIngr(\''+opz[i]+'\');">'+opz[i]+'</button></td>';
+    }
+    tab+="</tr>";
+    tab+="</table><br>";
+    tab+="<div id='carne'></div>";
+    tab+="<img src='Piatto.png' height='70px' width='100%'><br><br>";
+    tab+="<ul class=\"list-group\"><h5>Il tuo piatto di carne è composto da:</h5>";
+    tab+="<div id=\"mioPiattoDiCarne\"></div>";
+    tab+="</ul><br>";
+    tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'Il tuo piatto di carne\', 15);">Ordina</button></li>';
+    document.getElementById("tuoPiatto").innerHTML=tab;
+    return true;
+}
+
+function addIngr(cibo) {
+    var lista=document.getElementById("mioPiattoDiCarne");
+    listIngr+="<li class='list-group-item'>"+cibo+"</li>";
+    lista.innerHTML=listIngr;
+    var ingrImg=document.getElementById("carne");
+    var obj=document.createElement("img");
+    obj.setAttribute("src", cibo+".png");
+    obj.setAttribute("height", "70px");
+    ingrImg.appendChild(obj);
+    return true;
 }
