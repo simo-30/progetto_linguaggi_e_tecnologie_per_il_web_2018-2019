@@ -75,6 +75,10 @@ function incrementa_quant(nome) {
         fan+=1;
         return fan;
     }
+    if (nome=="Il tuo piatto") {
+        piatto+=1;
+        return piatto;
+    }
 }
 
 function scrivi_su_localStorage(nome, prezzoUn) { //in realtà sarebbe sessionStorage, ma non mi va di riscrivere il codice :)
@@ -155,7 +159,7 @@ function opzPiatto() {
     tab+="<ul class=\"list-group\"><h5>Il tuo piatto è composto da:</h5>";
     tab+="<div id=\"miaPizza\"></div>";
     tab+="</ul><br>";
-    tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'La tua pizza\', 10);">Ordina</button></li>';
+    tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'Il tuo piatto\', 10);">Ordina</button></li>';
     document.getElementById("tuoPiatto").innerHTML=tab;
     return true;
 }
