@@ -141,7 +141,7 @@ function opzPiatto() {
     var tab="";
     var larg=100/l;
     tab+="<li class='list-group-item'><table width='100%'>";
-    tab+="<thead><h4>Questi sono gli ingredienti che puoi aggiungere al tuo hamburger</h4></thead>";
+    tab+="<thead><h4>Questi sono gli ingredienti che puoi aggiungere al tuo hamburger</h4><small class='form-text text-muted'>Le immagini sono puramente illustrative</small></thead>";
     tab+="<tr>";
     for (i=0; i<l; i++) {
         tab+='<td width="'+larg+'%"><button type="button" class="btn btn-outline-success" onclick="return addIngr(\''+opz[i]+'\');">'+opz[i]+'</button></td>';

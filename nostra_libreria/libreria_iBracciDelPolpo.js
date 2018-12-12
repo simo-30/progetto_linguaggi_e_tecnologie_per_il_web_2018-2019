@@ -194,7 +194,7 @@ function opzPiatto() {
     var tab="";
     var larg=100/l;
     tab+="<li class='list-group-item'><table width='100%'>";
-    tab+="<thead><h4>Questi sono gli ingredienti che puoi aggiungere al tuo primo di pesce</h4></thead>";
+    tab+="<thead><h4>Questi sono gli ingredienti che puoi aggiungere al tuo primo di pesce</h4><small class='form-text text-muted'>Le immagini sono puramente illustrative</small></thead>";
     tab+="<tr>";
     for (i=0; i<l; i++) {
         tab+='<td width="'+larg+'%"><button type="button" class="btn btn-outline-success" onclick="return addIngr(\''+opz[i]+'\');">'+opz[i]+'</button></td>';
@@ -202,7 +202,7 @@ function opzPiatto() {
     tab+="</tr>";
     tab+="</table><br>";
     tab+="<div id='primo'></div>";
-    tab+="<img src='Piatto.png' height='70px'><br><br>";
+    tab+="<img src='Piatto.png' height='70px' width='100%'><br><br>";
     tab+="<ul class=\"list-group\"><h5>Il tuo primo di pesce è composta da:</h5>";
     tab+="<div id=\"mioPrimoDiPesce\"></div>";
     tab+="</ul><br>";
@@ -215,12 +215,10 @@ function addIngr(cibo) {
     var lista=document.getElementById("mioPrimoDiPesce");
     listIngr+="<li class='list-group-item'>"+cibo+"</li>";
     lista.innerHTML=listIngr;
-    var bk=document.createElement("br");
     var ingrImg=document.getElementById("primo");
     var obj=document.createElement("img");
     obj.setAttribute("src", cibo+".png");
     obj.setAttribute("height", "70px");
     ingrImg.appendChild(obj);
-    ingrImg.appendChild(bk);
     return true;
 }
