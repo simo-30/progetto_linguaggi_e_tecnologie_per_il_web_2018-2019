@@ -57,13 +57,13 @@
                                     <form role="form">
                                         <div class="form-group">
                                             <label for="username">Nome completo (sulla carta)</label>
-                                            <input type="text" class="form-control" name="carta">
+                                            <input type="text" class="form-control" name="carta" required>
                                 </div> <!-- form-group.// -->
                                 
                                 <div class="form-group">
                                     <label for="cardNumber">Numero carta</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" name="cardNumber" placeholder="">
+                                        <input type="text" class="form-control" name="cardNumber" placeholder="" required pattern="[0-9]{16}">
                                             <div class="input-group-append">
                                                 <span class="input-group-text text-muted">
                                                     <i class="fab fa-cc-visa"></i>   <i class="fab fa-cc-amex"></i>   
