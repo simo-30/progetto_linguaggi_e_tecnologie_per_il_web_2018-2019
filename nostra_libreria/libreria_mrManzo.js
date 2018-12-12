@@ -17,7 +17,7 @@ var fan=0;
 var fanLattina=0;
 var piatto=0;
 
-var opz=["Fettina", "Salsiccia", "Olive", "Cipolle", "Pomodorini"];
+var opz=["Fettina", "Salsiccia", "Olive", "Cipolle", "Pomodorini", "Aglio", "Bistecca"];
 var listIngr="";
 
 function incrementa_quant(nome) {
@@ -146,9 +146,9 @@ function opzPiatto() {
     tab+="</table><br>";
     tab+="<div id='carne'></div>";
     tab+="<img src='Piatto.png' height='70px' width='100%'><br><br>";
-    tab+="<ul class=\"list-group\"><h5>Il tuo piatto di carne è composto da:</h5>";
+    tab+="<h5>Il tuo piatto di carne è composto da:</h5>";
     tab+="<div id=\"mioPiattoDiCarne\"></div>";
-    tab+="</ul><br>";
+    tab+="<br>";
     tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'Il tuo piatto di carne\', 15);">Ordina</button></li>';
     document.getElementById("tuoPiatto").innerHTML=tab;
     return true;
@@ -156,7 +156,10 @@ function opzPiatto() {
 
 function addIngr(cibo) {
     var lista=document.getElementById("mioPiattoDiCarne");
-    listIngr+="<li class='list-group-item'>"+cibo+"</li>";
+    if (listIngr!="") {
+        listIngr+=", ";
+    }
+    listIngr+=cibo;
     lista.innerHTML=listIngr;
     var ingrImg=document.getElementById("carne");
     var obj=document.createElement("img");
