@@ -22,7 +22,7 @@ var fan=0;
 var piatto=0;
 
 //variabili per la gestione della creazione del piatto
-var opz=["Pennette", "Spaghetti", "Pomodori pachino", "Frutti di mare", "Cozze", "Vongole", "Cannolicchi", "Salmone"];
+var opz=["Pennette", "Spaghetti", "Pomodorini", "Cozze", "Vongole", "Cannolicchi", "Salmone"];
 var listIngr="";
 
 function incrementa_quant(nome) {
