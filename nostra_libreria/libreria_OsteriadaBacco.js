@@ -19,7 +19,7 @@ var coca=0;
 var fan=0;
 var piatto=0;
 
-var opz=["Pasta", "Pancetta", "Pomodoro", "Uovo"];
+var opz=["Pasta", "Pancetta", "Pomodoro", "Uovo", "Parmigiano"];
 var listIngr="";
 
 function incrementa_quant(nome) {
@@ -157,7 +157,7 @@ function opzPiatto() {
     tab+="<div id='pizza'></div>";
     tab+="<img src='piatto.png' height='70px' width='100%'><br><br>";
     tab+="<h5>Il tuo piatto è composto da:</h5>";
-    tab+="<div id=\"mioPiatto\"></div>";
+    tab+="<div id=\"miaPizza\"></div>";
     tab+="<br>";
     tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'Il tuo piatto\', 10);">Ordina</button></li>';
     document.getElementById("tuoPiatto").innerHTML=tab;
@@ -165,11 +165,10 @@ function opzPiatto() {
 }
 
 function addIngr(cibo) {
-    var lista=document.getElementById("mioPiatto");
+    var lista=document.getElementById("miaPizza");
     if (listIngr!="") {
         listIngr+=", ";
     }
-    listIngr+=cibo;
     lista.innerHTML=listIngr;
     var ingrImg=document.getElementById("pizza");
     var obj=document.createElement("img");
