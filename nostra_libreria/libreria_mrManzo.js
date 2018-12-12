@@ -17,7 +17,7 @@ var fan=0;
 var fanLattina=0;
 var piatto=0;
 
-var opz=["Fettina", "Salsiccia", "Olive"];
+var opz=["Fettina", "Salsiccia", "Olive", "Cipolle", "Pomodorini"];
 var listIngr="";
 
 function incrementa_quant(nome) {
