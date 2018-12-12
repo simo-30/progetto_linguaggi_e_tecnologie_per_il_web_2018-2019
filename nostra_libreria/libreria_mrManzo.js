@@ -17,7 +17,7 @@ var fan=0;
 var fanLattina=0;
 var piatto=0;
 
-var opz=["Fettina", "Salsiccia", "Olive", "Cipolle", "Pomodorini", "Aglio", "Bistecca"];
+var opz=["Fettina", "Salsiccia", "Olive", "Cipolle", "Pomodorini", "Aglio", "Bistecca", "Fagioli"];
 var listIngr="";
 
 function incrementa_quant(nome) {
@@ -164,7 +164,7 @@ function addIngr(cibo) {
     var ingrImg=document.getElementById("carne");
     var obj=document.createElement("img");
     obj.setAttribute("src", cibo+".png");
-    obj.setAttribute("height", "70px");
+    obj.setAttribute("height", "100px");
     ingrImg.appendChild(obj);
     return true;
 }

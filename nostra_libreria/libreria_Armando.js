@@ -162,12 +162,15 @@ function opzPiatto() {
 
 function addIngr(cibo) {
     var lista=document.getElementById("miaPizza");
-    listIngr+="<li class='list-group-item'>"+cibo+"</li>";
+    if (listIngr!="") {
+        listIngr+=", ";
+    }
+    listIngr+=cibo;
     lista.innerHTML=listIngr;
     var ingrImg=document.getElementById("pizza");
     var obj=document.createElement("img");
     obj.setAttribute("src", cibo+".png");
-    obj.setAttribute("height", "70px");
+    obj.setAttribute("height", "100px");
     ingrImg.appendChild(obj);
     return true;
 }
