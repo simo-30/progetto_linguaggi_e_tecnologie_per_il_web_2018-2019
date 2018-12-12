@@ -157,7 +157,7 @@ function opzPiatto() {
     tab+="<div id='pizza'></div>";
     tab+="<img src='piatto.png' height='70px' width='100%'><br><br>";
     tab+="<h5>Il tuo piatto è composto da:</h5>";
-    tab+="<div id=\"miaPizza\"></div>";
+    tab+="<div id=\"mioPiatto\"></div>";
     tab+="<br>";
     tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'Il tuo piatto\', 10);">Ordina</button></li>';
     document.getElementById("tuoPiatto").innerHTML=tab;
@@ -165,10 +165,11 @@ function opzPiatto() {
 }
 
 function addIngr(cibo) {
-    var lista=document.getElementById("miaPizza");
+    var lista=document.getElementById("mioPiatto");
     if (listIngr!="") {
         listIngr+=", ";
     }
+    listIngr+=cibo;
     lista.innerHTML=listIngr;
     var ingrImg=document.getElementById("pizza");
     var obj=document.createElement("img");
