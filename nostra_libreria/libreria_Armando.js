@@ -162,7 +162,10 @@ function opzPiatto() {
 
 function addIngr(cibo) {
     var lista=document.getElementById("miaPizza");
-    listIngr+="<li class='list-group-item'>"+cibo+"</li>";
+    if (listIngr!="") {
+        listIngr+=", ";
+    }
+    listIngr+=cibo;
     lista.innerHTML=listIngr;
     var ingrImg=document.getElementById("pizza");
     var obj=document.createElement("img");

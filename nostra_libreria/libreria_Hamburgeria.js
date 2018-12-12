@@ -161,7 +161,10 @@ function opzPiatto() {
 
 function addIngr(cibo) {
     var lista=document.getElementById("mioHamburger");
-    listIngr+="<li class='list-group-item'>"+cibo+"</li>";
+    if (listIngr!="") {
+        listIngr+=", ";
+    }
+    listIngr+=cibo;
     lista.innerHTML=listIngr;
     var bk=document.createElement("br");
     var ingrImg=document.getElementById("panino");
