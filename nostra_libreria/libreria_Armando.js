@@ -151,7 +151,7 @@ function opzPiatto() {
     tab+="</tr>";
     tab+="</table><br>";
     tab+="<div id='pizza'></div>";
-    tab+="<img src='Base_bianca.png' height='70px' width='100%'><br><br>";
+    tab+="<img src='Base_bianca.png' height='100px' width='100%'><br><br>";
     tab+="<h5>La tua pizza è composta da:</h5>";
     tab+="<div id=\"miaPizza\"></div>";
     tab+="<br>";

@@ -145,7 +145,7 @@ function opzPiatto() {
     tab+="</tr>";
     tab+="</table><br>";
     tab+="<div id='carne'></div>";
-    tab+="<img src='Piatto.png' height='70px' width='100%'><br><br>";
+    tab+="<img src='Piatto.png' height='100px' width='100%'><br><br>";
     tab+="<h5>Il tuo piatto di carne è composto da:</h5>";
     tab+="<div id=\"mioPiattoDiCarne\"></div>";
     tab+="<br>";

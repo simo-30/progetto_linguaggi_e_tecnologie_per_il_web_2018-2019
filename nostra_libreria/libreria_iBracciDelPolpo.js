@@ -202,7 +202,7 @@ function opzPiatto() {
     tab+="</tr>";
     tab+="</table><br>";
     tab+="<div id='primo'></div>";
-    tab+="<img src='Piatto.png' height='70px' width='100%'><br><br>";
+    tab+="<img src='Piatto.png' height='100px' width='100%'><br><br>";
     tab+="<h5>Il tuo primo di pesce è composto da:</h5>";
     tab+="<div id=\"mioPrimoDiPesce\"></div>";
     tab+="<br>";
