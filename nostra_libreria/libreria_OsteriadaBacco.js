@@ -17,6 +17,10 @@ var bianco=0;
 var rosso=0;
 var coca=0;
 var fan=0;
+var piatto=0;
+
+var opz=[];
+var listIngr="";
 
 function incrementa_quant(nome) {
     if (nome=="Bucatini all'amatriciana") {
@@ -163,7 +167,7 @@ function addIngr(cibo) {
     var ingrImg=document.getElementById("pizza");
     var obj=document.createElement("img");
     obj.setAttribute("src", cibo+".png");
-    obj.setAttribute("height", "70px");
+    obj.setAttribute("height", "100px");
     ingrImg.appendChild(obj);
     return true;
 }
