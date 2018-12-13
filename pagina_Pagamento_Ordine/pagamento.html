@@ -10,6 +10,7 @@
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="pagamento.js"></script>
     </head>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
@@ -57,13 +58,13 @@
                                     <form role="form">
                                         <div class="form-group">
                                             <label for="username">Nome completo (sulla carta)</label>
-                                            <input type="text" class="form-control" name="carta" required>
+                                            <input type="text" class="form-control" id="nomeCarta">
                                 </div> <!-- form-group.// -->
                                 
                                 <div class="form-group">
                                     <label for="cardNumber">Numero carta</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" name="cardNumber" placeholder="" required pattern="[0-9]{16}">
+                                        <input type="text" class="form-control" id="numeroCarta">
                                             <div class="input-group-append">
                                                 <span class="input-group-text text-muted">
                                                     <i class="fab fa-cc-visa"></i>   <i class="fab fa-cc-amex"></i>   
@@ -78,19 +79,19 @@
                                             <div class="form-group">
                                                 <label><span class="hidden-xs">Scadenza</span> </label>
                                                 <div class="input-group">
-                                                    <input type="number" class="form-control" placeholder="MM" name="" min=1 max=12>
-                                                    <input type="number" class="form-control" placeholder="YY" name="" min=2018 max=2099>
+                                                    <input type="number" class="form-control" placeholder="MM" id="mese">
+                                                    <input type="number" class="form-control" placeholder="YY" id="anno">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label data-toggle="tooltip" title="" data-original-title="3 numeri presenti sul retro della carta">CVV <i class="fa fa-question-circle"></i></label>
-                                                <input type="text" class="form-control" required pattern="[0-9]{3}">
+                                                <input type="text" class="form-control">
                                             </div> <!-- form-group.// -->
                                         </div>
                                     </div> <!-- row.// -->
-                                    <a href="paga_terminato.html" class="subscribe btn btn-primary btn-block" role="button">Conferma e paga</a> 
+                                    <a href="paga_terminato.html" class="subscribe btn btn-primary btn-block" role="button" onclick="return checkForm();">Conferma e paga</a> 
                                     </form>
                                 </div> <!-- tab-pane.// -->
                                 
