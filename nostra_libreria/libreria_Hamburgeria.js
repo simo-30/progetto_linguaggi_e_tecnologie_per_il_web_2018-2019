@@ -140,14 +140,12 @@ function opzPiatto() {
     var i, l=opz.length;
     var tab="";
     var larg=100/l;
-    tab+="<li class='list-group-item'><table width='100%'>";
-    tab+="<thead><h4>Questi sono gli ingredienti che puoi aggiungere al tuo hamburger</h4><small class='form-text text-muted'>Le immagini sono puramente illustrative</small></thead>";
-    tab+="<tr>";
+    tab+="<li class='list-group-item'>";
+    tab+="<h4>Questi sono gli ingredienti che puoi aggiungere al tuo hamburger</h4><small class='form-text text-muted'>Le immagini sono puramente illustrative</small>";
     for (i=0; i<l; i++) {
-        tab+='<td width="'+larg+'%"><button type="button" class="btn btn-outline-success" onclick="return addIngr(\''+opz[i]+'\');">'+opz[i]+'</button></td>';
+        tab+='<button type="button" class="btn btn-outline-success" onclick="return addIngr(\''+opz[i]+'\');">'+opz[i]+'</button>';
     }
-    tab+="</tr>";
-    tab+="</table><br>";
+    tab+="<br>";
     tab+="<img src='parte_superiore.png' height='70px'>";
     tab+="<div id='panino'></div>";
     tab+="<img src='parte_inferiore.png' height='70px'><br><br>";
